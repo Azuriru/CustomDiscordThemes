@@ -1,0 +1,329 @@
+.theme-dark .layer-3QrUeG,
+.theme-dark .layers-3iHuyZ,
+.container-2lgZY8,
+.theme-dark .guildsWrapper-5TJh6A,
+.channels-Ie2l6A,
+.theme-dark .chat-3bRxxu,
+.theme-dark .chat-3bRxxu form,
+.theme-dark .content-yTz4x3,
+.theme-dark .messagesWrapper-3lZDfY,
+.theme-dark .title-3qD0b-,
+.theme-dark .members-1998pB,
+.theme-dark #friends,
+.theme-dark .headerBar-UHpsPw,
+.container-PNkimc,
+.typing-2GQL18,
+.stop-animation {
+    background-color: transparent !important;
+}
+.appMount-3VJmYg {
+    background: linear-gradient(to right, rgba(21, 7, 45, 0.8), rgba(21, 7, 45, 0.8)), url(https://cdn.discordapp.com/attachments/447720442354991106/489704826196852736/PokC3A9mon.png) center top / cover no-repeat fixed;
+}
+.channel-2QD9_O.selected-1HYmZZ a, .channel-2QD9_O:hover a {
+    background-color: rgba(21, 7, 45, 0.5);
+}
+.theme-dark .activityFeed-28jde9 {
+    background-color: rgba(20, 7, 45, 0.7);
+}
+.theme-dark .headerNormal-T_seeN {
+    background-color: #15072d;
+}
+.theme-dark .body-3iLsc4, .theme-dark .footer-1fjuF6 {
+    background-color: #200a46;
+}
+.theme-dark .quickMessage-1yeL4E {
+    background-color: #2e115f;
+    border-color: #200a46;
+}
+.contentConnectedVoice-qL-YrL:active,
+.contentHoveredText-2D9B-x,
+.contentHoveredVoice-3p_NEO:active,
+.contentSelectedVoice-1WDIBM:active {
+    background-color: rgba(21, 7, 45, 0.5);
+}
+.contentSelectedText-3wUhMi, .contentSelectedVoice-1WDIBM {
+    background-color: rgba(67, 28, 132, 0.3);
+}
+.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-3pqQcL, .nameLockedVoice-26MhB1 {
+    color: #888888;
+}
+.theme-dark .member-3W1lQa:hover .content-OzHfo4,
+.theme-dark .member-3W1lQa.popout-open .content-OzHfo4,
+.theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
+    background-color: #200a46;
+}
+.unread-1xRYoj {
+    background-color: rgba(21, 7, 45, 0.8);
+}
+.unread-1xRYoj:hover {
+    background-color: rgba(77, 27, 162, 0.8);
+}
+.theme-dark .guild-1EfMGQ .guildInner-3DSoA4 {
+    background-color: rgba(61, 19, 132, 0.8) !important;
+}
+.search-bar .search-bar-inner {
+    background: rgba(21, 7, 45, 0.4);
+}
+.theme-dark .quickswitcher-3JagVE {
+    background-color: rgba(21, 7, 45, 0.8);
+    color: #dcddde;
+}
+.theme-dark .input-2VB9rf {
+    background-color: rgba(41, 14, 88, 0.8);
+}
+.theme-dark .resultFocused-3aIoYe {
+    background-color: rgba(35, 11, 77, 0.6);
+}
+.theme-dark .divider-3gKybi:before, .theme-dark .divider-3gKybi span {
+    background-color: transparent;
+}
+.theme-dark .topSectionNormal-2-vo2m {
+    background-color: #15072d;
+}
+.newMessagesBar-mujexs button:last-child {
+    color: #efebf5;
+}
+.theme-dark .jumpToPresentBar-9P20AM,
+.newMessagesBar-mujexs {
+    background-color: #6f598e;
+}
+.theme-dark .jumpToPresentBar-9P20AM:hover,
+.newMessagesBar-mujexs:hover {
+    background-color: #8c73af;
+}
+.theme-dark .body-3ND3kc {
+    background-color: #280a5d;
+}
+.headerPlaying-j0WQBV {
+    background: #6437b1;
+}
+.theme-dark .searchPopout-1vUlP3 {
+    background-color: rgba(21, 7, 45, 0.85);
+    border: 1px solid rgba(20, 0, 56, 1);
+}
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: #331c5a;
+}
+.theme-dark .searchAnswer-3Dz2-q, .theme-dark .searchFilter-2ESiM3 {
+    background-color: #5a4286;
+}
+.theme-dark .search-results-wrap {
+    background-color: #200a46;
+}
+.theme-dark .search-results-wrap .search-header {
+    background-color: #15072d;
+}
+.theme-dark .search-results-wrap .channel-separator .channel-name {
+    background-color: #200a46;
+}
+.theme-dark .search-results-wrap .search-result:before,
+.theme-dark .search-results-wrap .search-result:after {
+    background-image: linear-gradient(0deg,rgba(47,49,54,0),#1f0a44);
+}
+.theme-dark .search-results-wrap .search-result .search-result-message.hit {
+    border: 2px solid rgb(31, 10, 69);
+}
+.theme-dark .search-results-wrap .search-result .hit {
+    background-color: #290b5d;
+    box-shadow: 0 0 10px 6px #1a0046;
+}
+.theme-dark .autocomplete-1vrmpx {
+    background-color: #280a5d;
+}
+.theme-dark .selectorSelected-1_M1WV {
+    background-color: #38157b;
+}
+.theme-dark .hasMore-3e72_v button {
+    background: #3a2461;
+    border: 1px solid #250067;
+}
+.hasMore-3e72_v button {
+    color: white;
+}
+.theme-dark .ui-standard-sidebar-view .sidebar-region {
+    background: #250c50;
+}
+.theme-dark .ui-standard-sidebar-view .content-region {
+    background: #3a2561;
+}
+.theme-dark .cardPrimary-1Hv-to {
+    background: rgba(21, 7, 45, 0.4);
+    border-color: #15072d;
+}
+.theme-dark .modal-3HD5ck,
+.theme-dark .footer-2yfCgX {
+    background-color: #15072d;
+}
+.channel-2QD9_O .status {
+    border: 2px solid #3a2461;
+}
+.channel-2QD9_O.selected-1HYmZZ .status {
+    border-color: #3a2461;
+}
+.channel-2QD9_O:hover .status {
+    border-color: #3a2461;
+}
+.theme-dark .embedInner-1-fpTo {
+    background-color: rgba(50, 23, 74, 0.45);
+    border-color: rgba(50, 23, 74, 0.5);
+}
+.theme-dark .embedPill-1Zntps {
+    background-color: #3a2461;
+}
+.theme-dark .markup-2BOw-j code, .theme-dark .markup-2BOw-j code.inline {
+    background: #1f0b42;
+}
+.theme-dark .markup-2BOw-j pre {
+    background: #16003c;
+}
+.theme-dark .wrapper-29NfPK {
+    background-color: #15072c;
+}
+#app-mount .wrapper-29NfPK {
+    background-color: #64479c;
+}
+.video-1FfuMD {
+    background-color: #15072c;
+}
+.theme-dark .container-2x5lvQ header {
+    background-color: #14062f;
+}
+.theme-dark .container-2x5lvQ section {
+    background-color: #290861;
+}
+.theme-dark .wrapper-29NfPK.minimum-2d6zH6 .actions-2vadYq .center-1Vp33r {
+    background-color: #330d73;
+    border-color: #260261;
+}
+.theme-dark .callAvatar-v-u4BM.voice-2D-tt_ .callAvatarStatus-3y6S04 {
+    border-color: #392265;
+}
+.theme-dark .messageGroupWrapper-o-Zw7G {
+    background-color: rgba(21, 7, 45, 0.8);
+    border-color: rgb(0, 0, 0);
+}
+.theme-dark .messageGroupWrapper-o-Zw7G:hover {
+    border-color: rgb(0, 0, 0);
+}
+.theme-dark .header-ykumBX {
+    background: #4b466a;
+}
+.theme-dark .footer-1kmXd4 {
+    background-color: rgb(75, 69, 109);
+}
+.theme-dark .jumpButton-3DTcS_ {
+    background-color: #4b456d;
+    color: hsla(0,0%,100%,.6);
+}
+.theme-dark .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
+    background-color: #ffffff00;
+    box-shadow: 0 0 6px 4px #00000000;
+}
+.theme-dark .messagesPopoutWrap-1MQ1bW {
+    background-color: rgba(21, 7, 45, 0.8);
+    border: 1px solid rgb(39, 15, 86);
+}
+#app-mount .wrapper-35wsBm {
+    background: rgba(50, 23, 74, 0.45);
+    border-color: rgba(50, 23, 74, 0.5);
+}
+#app-mount .menu-Sp6bN1 {
+    background: #2d1758;
+    box-shadow: 0 0 1px rgba(31, 0, 86, 0.82), 0 1px 4px rgba(0,0,0,.1);
+}
+.theme-dark .item-1Yvehc:hover {
+    background: #2c0a58;
+}
+#app-mount .contextMenu-HLZMGh {
+    background-color: rgba(21, 7, 45, 0.8);
+}
+#app-mount .channelNotice-1-XFjC.quickswitcher-35bYg4,
+#app-mount .channelNotice-1-XFjC.invite-OjTXrW {
+    background: transparent;
+}
+.theme-dark .item-1GzJrl:hover {
+    background-color: #392265;
+}
+.userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
+    background-color: #35205e;
+    border-color: #202225;
+}
+.theme-dark .accountBtnInner-sj5jLs {
+    background-color: #392265;
+    border-color: #14062f;
+}
+.emojiPicker-3m1S-j {
+    background-color: #280a5d;
+    border: 1px solid #382357;
+}
+.search-bar.search-bar-light {
+    background-color: #270561;
+}
+.search-bar.search-bar-light input::placeholder {
+   color: #efe7ff;
+}
+.emojiPicker-3m1S-j .stickyHeader-1SS0JU {
+    background: #260065;
+}
+.emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S {
+    background-color: #56438b;
+}
+.theme-dark .header-1RC2Wb {
+    background-color: #14062e;
+}
+.theme-dark .header-1RC2Wb:hover {
+    background-color: rgb(14, 1, 41);
+}
+.theme-dark .body-SKIE6r {
+    background-color: rgb(37, 16, 82);
+}
+.theme-dark .timestampCozy-2hLAPV,
+.theme-dark .edited-DL9ECl {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.headerButtonColor-G7_f-V {
+    background: #240d55;
+    color: #fff;
+}
+.theme-dark .guildsAdd-21_IdK {
+    background: #340c77;
+    border-color: #14062e;
+    color: #7a66a5;
+}
+.downloadAppButton-3EFlA6 svg use {
+    background: #340c77
+}
+.theme-dark .container-3cGP6G {
+    background: rgba(21, 7, 45, 0.8);
+}
+.theme-dark .message-2qRu38 {
+    background-color: rgba(44, 13, 99, 0.95);
+}
+.theme-dark .item-2J1YMK:active, .theme-dark .item-2J1YMK:hover {
+    background-color: #14062d;
+}
+.theme-dark .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover, .theme-light .lookFilled-1Gx00P.hoverBrand-1_Fxlk.hasHover-3X1-zV:hover {
+    background-color: #422388;
+    color: #fff;
+}
+.emojiPicker-3m1S-j .category-2U57w6 {
+   color: #efe7ff;
+}
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-thumb {
+    background-color: #250c50;
+    border-color: rgba(21, 7, 45, 0);
+}
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-track-piece {
+    background-color: #3a2561;
+    border-color: rgba(21, 7, 45, 0);
+}
+.theme-dark .scrollerThemed-2oenus.themeGhostHairline-DBD-2d .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: #250c50;
+}
+.tooltip.tooltip-black {
+    background-color: #000;
+}
+.scrollerThemed-2oenus.themeGhostHairlineChannels-3G0x9_ .scroller-2FKFPG::-webkit-scrollbar-thumb {
+    background-color: rgb(37, 12, 80);
+}
