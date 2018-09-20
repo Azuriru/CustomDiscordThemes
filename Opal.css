@@ -1348,10 +1348,10 @@
     background-color: #5a0b44
 }
 .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,.theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
-    background-color: #f2f2f2
+    background-color: transparent
 }
 .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scrollbar-2rkZSL>.track-1JN30G,.theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scrollbar-2rkZSL>.track-1JN30G,.theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scrollbar-2rkZSL>.track-1JN30G {
-    background-color: #f2f2f2
+    background-color: transparent
 }
 .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb,.theme-dark .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,.theme-light .scrollerThemed-2oenus.themeDark-2cjlUp .scroller-2FKFPG::-webkit-scrollbar-thumb {
     background-color: #350a27;
@@ -3711,7 +3711,7 @@ body {
     color: #dcddde;
 }
 .tooltip.tooltip-black {
-    background-color: #000
+    background-color: #300a2a;
 }
 .tooltip.tooltip-black.tooltip-top:after {
     border-top-color: #000
@@ -4637,7 +4637,7 @@ body {
     color: hsla(0, 0%, 100%, 0.35)
 }
 .search-bar.search-bar-light {
-    background-color: #fff;
+    background-color: transparent;
 }
 .search-bar.search-bar-light .search-bar-inner {
     background-color: rgba(199,209,216,.3);
@@ -4647,13 +4647,13 @@ body {
     color: #737f8d;
 }
 .search-bar.search-bar-light input::-webkit-input-placeholder {
-    color: rgba(115,127,141,.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 .search-bar.search-bar-light input:-ms-input-placeholder {
-    color: rgba(115,127,141,.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 .search-bar.search-bar-light input::placeholder {
-    color: rgba(115,127,141,.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 .no-search-results {
     color: hsla(0,0%,100%,.3);
@@ -5276,10 +5276,10 @@ body {
     border-color: #f6f6f7
 }
 .theme-dark .autocomplete-1vrmpx {
-    background-color: #5a1741
+    background-color: rgba(45, 7, 40, 0.8);
 }
 .theme-dark .selectorSelected-1_M1WV {
-    background-color: rgba(110, 31, 80, 0.7)
+    background-color: rgba(117, 0, 68, 0.3);
 }
 .theme-dark .divider-23swzi {
     background-color: rgba(117, 0, 68, 0.3)
@@ -5421,7 +5421,7 @@ body {
     background-size: 22px 22px;
 }
 .emojiPicker-3m1S-j {
-    background-color: #fff;
+    background-color: rgba(45, 7, 40, 0.6);
 }
 .emojiPicker-3m1S-j .dimmer-3iH-5D {
     background-color: transparent;
@@ -5430,7 +5430,7 @@ body {
     background-color: hsla(0,0%,100%,.6);
 }
 .emojiPicker-3m1S-j .stickyHeader-1SS0JU {
-    background: hsla(0,0%,100%,.95);
+    background: transparent;
 }
 .emojiPicker-3m1S-j .no-search-results {
     color: #99aab5;
@@ -5447,7 +5447,7 @@ body {
     background-size: contain;
 }
 .emojiPicker-3m1S-j .scroller-3vODG7 .emojiItem-109bjA.selected-39BZ4S {
-    background-color: #eceeef;
+    background-color: rgba(127, 37, 106, 0.6);
 }
 .emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq {
     background-position: 50%;
@@ -5917,11 +5917,11 @@ body {
     color: #737f8d
 }
 .theme-dark .messagesPopoutWrap-1MQ1bW {
-    background-color: rgba(90, 23, 65, 0.9);
+    background-color: rgba(45, 7, 40, 0.8);
     border-color: rgb(72, 16, 57, 0.6);
 }
 .theme-dark .header-ykumBX {
-    background-color: #4a1037;
+    background-color: rgba(74, 16, 55, 0.8);
 }
 .theme-dark .header-ykumBX .title-3pkaKd {
     color: #fff
@@ -5947,15 +5947,15 @@ body {
     color: hsla(0, 0%, 100%, 0.35)
 }
 .theme-dark .messageGroupWrapper-o-Zw7G {
-    background-color: rgba(110, 31, 80, 0.7);
-    border-color: rgb(72, 16, 57, 0.6)
+    background-color: rgba(65, 12, 54, 0.8);
+    border-color: rgb(72, 16, 57, 0.6);
 }
 .theme-dark .messageGroupWrapper-o-Zw7G:hover {
     border-color: #481039;
 }
 .theme-dark .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
-    background-color: rgba(110, 31, 80, 0.7);
-    box-shadow: 0 0 6px 4px #651b4c;
+    background-color: rgba(32, 8, 40, 0);
+    box-shadow: 0 0 6px 4px #651b4c00;
 }
 .theme-dark .jumpButton-3DTcS_ {
     background-color: #4a0f49;
