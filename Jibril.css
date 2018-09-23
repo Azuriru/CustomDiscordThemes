@@ -11971,3 +11971,167 @@ body {
 .appMount-3VJmYg {
     background: linear-gradient(to right, rgba(45, 7, 40, 0.8), rgba(41, 7, 40, 0.8)), url(https://cdn.discordapp.com/attachments/490910971615903765/490911244623282198/Jibril.png) center top / cover no-repeat fixed;
 }
+
+/* Dropdowns and stuff */
+.Select-menu {
+    background: #54113b;
+}
+
+#app-mount .Select-control {
+    border-color: #52083e;
+}
+
+#app-mount [class*="divider"] {
+    background: #54113b;
+}
+
+/* Guild dropdown invite */
+#app-mount .menu-Sp6bN1 .invite-271nFU {
+    color: rgba(255, 255, 255, .6);
+}
+
+/* For the rounded boxes in options */
+
+#app-mount [class*="card"]::before {
+    background: #5a0b44;
+    border-color: #411130;
+}
+
+/* For the petty rounded boxes in options that uses inline styles */
+/* Remove the actual color in the selector if you want the Privacy & Safety to be styled aswell */
+#app-mount .item-26Dhrx[style*="border-color: rgb(114, 137, 218);"] {
+    background: #5a0b44 !important; /* fuck inline styles lol */
+    border-color: #5a0b44 !important;
+}
+
+/* For the checkboxes in the options that also use inline styles */
+.checkbox-1ix_J3 {
+    background-color: #500a36 !important; /* FUCK */
+    border: #500a36;
+}
+
+/* For the X button in the options */
+#app-mount .button-mM-y8i:hover {
+    background-color: #5f1a48;
+}
+
+/* For literally every checkbox */
+svg[name="Checkmark"] polyline {
+    stroke: white; /* because I can't find anything better */
+}
+
+/* Not seeing your game? I can't see shit */
+.theme-dark .add-game-popout {
+    background-color: rgb(110, 31, 80); /* solid is better */
+}
+
+/* Menu at the side of messages */
+#app-mount .item-2J1YMK,
+#app-mount .container-3cGP6G {
+    background-color: #411130;
+    margin: 0;
+    width: 100%;
+}
+
+
+/* Tooltips when hovering over shit */
+#app-mount .item-2J1YMK:hover {
+    background-color: #27031a
+}
+
+#app-mount .tooltip {
+    background: #411130;
+}
+
+#app-mount .tooltip-top::after {
+    border-top-color: #411130
+}
+
+#app-mount .tooltip-bottom::after {
+    border-bottom-color: #411130;
+}
+
+#app-mount .tooltip-left::after {
+    border-left-color: #411130;
+}
+
+#app-mount .tooltip-right::after {
+    border-right-color: #411130;
+}
+
+/* For the tooltip when sliding over the slider thing */
+.theme-dark .bubble-3we2di {
+    background-top-color: #411130;
+}
+
+.theme-dark .bubble-3we2di::before {
+    border-top-color: #411130;
+}
+
+/* For hovering over context menu options */
+.theme-dark .item-1Yvehc:hover {
+    background-color: rgba(65, 17, 48, .4);
+}
+
+/* No need to have them different, silly */
+#app-mount .channel-2QD9_O:hover a,
+#app-mount .member-3W1lQa:hover .content-OzHfo4,
+#app-mount .contentHoveredText-2D9B-x {
+    background-color: rgba(117, 0, 68, 0.3);
+}
+
+/* It's just better this way */
+#app-mount [class*="card"],
+#app-mount .quickMessage-2XpSaN,
+#app-mount .userInfoSection-2acyCx + .userInfoSection-2acyCx, /* #notmyselector */
+#app-mount .userPopout-3XzG_A .footer-1fjuF6,
+#app-mount .need-help-modal .footer,
+#app-mount .accountBtnInner-sj5jLs {
+    border-color: transparent;
+}
+
+#app-mount .connectedAccount-36nQx7 {
+    box-shadow: 0 0 5px #842a82;
+    border-color: transparent;
+}
+
+/* Make the upload module bearable */
+#app-mount .uploadModal-2ifh8j .button-primary {
+    min-height: 36px;
+    margin-left: 10px;
+    background-color: #af20a3;
+    color: white;
+}
+
+#app-mount .uploadModal-2ifh8j .button:not(.button-primary) {
+    transition: background-color 200ms ease;
+}
+
+#app-mount .uploadModal-2ifh8j .button:not(.button-primary):hover {
+    text-decoration: none;
+    background-color: #651364;
+}
+
+/* help modal */
+#app-mount .need-help-modal .form-inner,
+#app-mount .need-help-modal .footer {
+    background-color: #8c2666;
+}
+
+#app-mount .need-help-modal .form-inner {
+    padding-bottom: 0;
+}
+
+.messageCozy-2JPAPA + .divider-32i8lo {
+    display: none;
+}
+
+.containerCozyBounded-1rKFAn {
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.containerCozyBounded-1rKFAn:last-of-type {
+    padding-bottom: 20px;
+}
+/* TODO: Create guild modal */
