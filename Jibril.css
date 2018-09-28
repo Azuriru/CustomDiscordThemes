@@ -5500,13 +5500,13 @@ body {
 .theme-dark .dividerEnabled-2TTlcf {
     border-bottom-color: hsla(0,0%,100%,.04)
 }
-.theme-dark .isLocalBot-38G0P0 {
+.theme-dark .-38G0P0 {
     border-color: transparent;
     color: hsla(0,0%,97.6%,.3)
 }
-.theme-light .isLocalBot-38G0P0 {
-    border-color: transparent;
-    color: rgba(146, 51, 106, 0.3)
+.theme-dark .isLocalBot-38G0P0 {
+    background-image: linear-gradient(90deg,rgba(47,49,54,.3) 80%,#580a46);
+    box-shadow: -20px 0 #580a46, 20px 0 #580a46, -20px -1px 0 0 #580a46, -20px 1px 0 #580a46, 20px 1px 0 #580a46, 20px -1px 0 #580a46;
 }
 .theme-light .headerCozyMeta-rdohGq {
     color: #99aab5
@@ -11965,7 +11965,7 @@ body {
 .theme-light .applicationStore-1pNvnv {
     background-color: #f6f6f7
 }
-.theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .container-2lgZY8, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3, .theme-dark .title-3qD0b-, .theme-dark .messagesWrapper-3lZDfY, .container-PNkimc, .theme-dark .members-1998pB, .theme-dark #friends, .theme-dark .activityFeed-28jde9, .theme-dark .headerBar-UHpsPw, .typing-2GQL18, .stop-animation {
+.theme-dark .layer-3QrUeG, .theme-dark .layers-3iHuyZ, .container-2lgZY8, .theme-dark .guildsWrapper-5TJh6A, .channels-Ie2l6A, .theme-dark .chat-3bRxxu, .theme-dark .chat-3bRxxu form, .theme-dark .content-yTz4x3, .theme-dark .title-3qD0b-, .theme-dark .messagesWrapper-3lZDfY, .container-PNkimc, .theme-dark .members-1998pB, .theme-dark #friends, .theme-dark .activityFeed-28jde9, .theme-dark .headerBar-UHpsPw, .typing-2GQL18{
     background: transparent !important;
 }
 .appMount-3VJmYg {
@@ -12135,3 +12135,5 @@ svg[name="Checkmark"] polyline {
     padding-bottom: 20px;
 }
 /* TODO: Create guild modal */
+
+
