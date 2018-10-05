@@ -11982,7 +11982,7 @@ body {
 }
 
 #app-mount [class*="divider"] {
-    background: #54113b;
+    background: transparent;
 }
 
 /* Guild dropdown invite */
