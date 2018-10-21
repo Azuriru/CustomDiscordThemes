@@ -1768,8 +1768,11 @@
 .theme-dark .error-25JxNp {
     color: #f04747
 }
-.focused-1mmYsC {
+[class*="focused"] {
     border-color: #5a0b44;
+}
+.theme-dark [class*="focused"] {
+    background-color: transparent;
 }
 .theme-light .input-cIJ7To {
     background-color: rgba(79,84,92,.02);
@@ -24286,3 +24289,9 @@ svg[name="Checkmark"] polyline {
     padding-bottom: 20px;
 }
 /* TODO: Create guild modal */
+.theme-dark [class*="queryContainer"] {
+    border-bottom-color: rgb(69, 18, 54);
+}
+.theme-dark .elevationBorderHigh-2WYJ09 {
+    box-shadow: 0 0 0 1px rgb(69, 18, 54, .6), 0 2px 10px 0 rgba(0,0,0,.2);
+}
