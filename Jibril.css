@@ -21924,9 +21924,6 @@ body {
 .theme-dark [class*="container"] section:after {
     border-top-color: rgba(110, 31, 80, 0.7)
 }
-.theme-dark [class*="container"] header {
-    background-color: #5a1741
-}
 .theme-dark .debugButton-1Zec0y {
     color: #99aab5
 }
