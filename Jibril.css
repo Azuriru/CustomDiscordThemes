@@ -3912,9 +3912,6 @@ body {
     background-color: #350a27;
     color: #fff
 }
-.theme-dark [class*="content"] {
-    background-color: #5a1741
-}
 .theme-dark .username-2lEtrk {
     color: #dcddde
 }
@@ -3932,9 +3929,6 @@ body {
 .theme-light .header-2B7Ri8 {
     background-color: #f6f6f7;
     color: #771c60
-}
-.theme-light [class*="content"] {
-    background-color: #fff
 }
 .theme-light .username-2lEtrk {
     color: #771c60
@@ -16056,9 +16050,6 @@ body {
     background-color: #350a27;
     color: #fff
 }
-.theme-dark [class*="content"] {
-    background-color: #5a1741
-}
 .theme-dark .username-2lEtrk {
     color: #dcddde
 }
@@ -16076,9 +16067,6 @@ body {
 .theme-light .header-2B7Ri8 {
     background-color: #f6f6f7;
     color: #771c60
-}
-.theme-light [class*="content"] {
-    background-color: #fff
 }
 .theme-light .username-2lEtrk {
     color: #771c60
