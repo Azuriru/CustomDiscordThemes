@@ -4,7 +4,7 @@ var backgrounds = [
 	],
     randomize = backgrounds[Math.floor(Math.random() * backgrounds.length)],
     customBackground = `
-.appMount-3VJmYg {
+.appMount-3lHmkl {
     background: linear-gradient(to right, rgba(44, 19, 62, 0.8), rgba(44, 19, 62, 0.8)), url(` + randomize + `) center top / cover no-repeat fixed;
 }
 .anchor-3Z-8Bb {
