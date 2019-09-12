@@ -808,6 +808,7 @@ div[class*="popouts-"] div[role="dialog"][class*="popout-"] div[class*="emojiPic
 #app-mount div[class*="contextMenu-"] {
     background-color: rgba(42, 0, 0, 0.8);
     box-shadow: none;
+    padding: 0;
 }
 
 div[class*="contextMenu-"] div[class*="itemGroup-"] div[class*="item-"]:hover {
