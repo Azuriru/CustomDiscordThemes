@@ -8,7 +8,7 @@
 #app-mount > div[class*="app-"] > div[class*="app-"] > div[class*="layers-"] > div[role="dialog"][class*="layer-"]::before {
     content: '';
     background-image: url(https://media.discordapp.net/attachments/512461667779739648/594186700046204955/unknown.png?width=1088&height=612);
-    ; background-color: #010b3d;
+    background-color: #010b3d;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -1156,4 +1156,32 @@ div[class*="scroller-"]::-webkit-scrollbar-track-piece {
 div[class*="title-"] > div[class*="children-"] > div[class*="iconWrapper-"] {
     margin: 2px;
     transform: scale(.8) translateY(2px);
+}
+
+/* 20 lines from him */
+div[class*="privateChannels"],
+div[class*="guilds"],
+div[class*="sidebar"] > div[class*="container"],
+div[class*="guilds"] div[class*="listItem"]:first-of-type div[class*="childWrapper"] {
+    background-color: transparent;
+}
+
+div[class*="sidebar"] div[class*="panels"] {
+    background-color: rgba(0, 0, 0, .2);
+}
+
+div[class*="channelTextArea"] div[class*="inner"] {
+    background-color: rgba(0, 0, 0, .3);
+}
+
+div[class*="channelTextArea"] div[class*="contents"] {
+    filter: brightness(.5);
+}
+
+button[class*="emojiButtonHovered"] div[class*="contents"] {
+    filter: none;
+}
+
+div[class*="member"] div[class*="content"] {
+    background-color: transparent;
 }
