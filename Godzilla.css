@@ -283,7 +283,7 @@
 
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="progressBar"] div[class*="tierMarkerBackground"] {
     background-image: none !important;
-    background-color: #9a08d0;
+    background-color: #7285e8;
 }
 
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="progressBar"] div[class*="tierMarkerInProgress"] {
@@ -292,7 +292,7 @@
 }
 
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] span[class*="boostCount"] {
-    background-color: #9a08d0;
+    background-color: #7285e8;
 }
 
 /** INVITE BUTTON **/
@@ -355,66 +355,6 @@
 #app-mount [class*="embedWrapper"] [class*="downloadButton"],
 #app-mount [class*="embedWrapper"] [class*="metadataIcon"] {
     color: #7289da;
-}
-
-#app-mount [class*="embedWrapper"] [class*="cancelButton"]:hover,
-#app-mount [class*="embedWrapper"] [class*="downloadButton"]:hover,
-#app-mount [class*="embedWrapper"] [class*="metadataIcon"]:hover {
-    color: #9a08d0;
-}
-
-#app-mount [class*="mediaBarGrabber"], 
-#app-mount [class*="mediaBarProgress"], 
-#app-mount [class*="mediaBarProgress"]:after,
-#app-mount [class*="mediaBarProgress"]:before {
-    background-color: #9a08d0;
-}
-
-#app-mount div[class*="progressContainer"] div[class*="progress"] div[class*="progressBar"][class*="animating"] {
-    background-color: #9a08d0 !important;
-}
-
-#app-mount [class*="mediaBarInteraction"]:hover [class*="mediaBarGrabber"] {
-    background-color: #7289da;
-}
-
-/** Upload Modal **/
-/*** Drag and drop ***/
-#app-mount [class*="uploadArea"][class*="uploadModalIn"] [class*="uploadDropModal"] [class*="bgScale"] {
-    background: #9a08d0;
-}
-
-#app-mount [class*="uploadArea"][class*="uploadModalIn"] [class*="uploadDropModal"] [class*="icon"] {
-    filter: hue-rotate(50deg) saturate(200%);
-}
-
-/*** Actual uploader ***/
-#app-mount [class*="uploadModal"] > [class*="inner"] {
-    border: 2px dashed #7289da;
-}
-
-#app-mount [class*="uploadModal-"] {
-    background-color: #9a08d0;
-}
-
-#app-mount [class*="uploadModal"] [class*="icon"]:not([class*="image"]) {
-    filter: hue-rotate(30deg) saturate(200%); 
-}
-
-#app-mount [class*="uploadModal"] [class*="inner"] [class*="file"] [class*="icon"][class*="image"] {
-    border: 2px solid #7289da;
-}
-
-#app-mount [class*="uploadModal"] [class*="footer"] {
-    background-color: #320042;
-}
-
-#app-mount [class*="uploadModal"] [class*="footer"] [class*="colorBrand"][class*="lookInverted"] {
-    color: #7289da;
-}
-
-#app-mount [class*="uploadModal"] [class*="inner"][class*="innerNoAutocomplete"] {
-    background-color: #7289da;
 }
 
 /*** Your files are too powerful ***/
@@ -601,7 +541,7 @@
 #app-mount div[class*="chat"] > div[class*="content"] div[class*="hasMore"] {
     background-color: rgba(4, 44, 66, 0.3);
     border-color: transparent;
-    color: #9a08d0;
+    color: #7285e8;
     box-shadow: none;
 }
 
@@ -705,12 +645,12 @@
 
 /** Time dividers **/
 #app-mount div[class*="chat"] > div[class*="content"] span[class*="dividerContent"] {
-    color: #9a08d0 !important;
+    color: #7285e8 !important;
 }
 
 #app-mount div[class*="chat"] > div[class*="content"] span[class*="dividerContent"]::before,
 #app-mount div[class*="chat"] > div[class*="content"] span[class*="dividerContent"]::after {
-    background: rgba(154, 8, 208, .8) !important;
+    background: rgba(114, 133, 232, .8) !important;
 }
 
 /** Timestamps **/
@@ -1524,7 +1464,7 @@
 
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="submit"][class*="button"][class*="lookFilled"]:hover,
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="button"][class*="button"][class*="lookFilled"]:hover {
-    background-color: #9a08d0;
+    background-color: #7285e8;
 }
 
 /*** Input focus effect ***/
@@ -1623,7 +1563,7 @@
 
 #app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="progress"] [class*="tierInProgress"] {
     background-image: none !important;
-    background-color: #9a08d0;
+    background-color: #7285e8;
 }
 
 #app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierHeader"] {
@@ -1663,7 +1603,7 @@
 }
 
 #app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorGrey"] {
-    color: #9a08d0;
+    color: #7285e8;
     background-color: rgba(84, 7, 110, 0.1);
 }
 
@@ -1778,7 +1718,7 @@
 }
 
 #app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="micTest"] div[class*="progress"] {
-    background: #9a08d0;
+    background: #7285e8;
 }
 
 #app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="micTest"] div[class*="notches"] {
@@ -1981,7 +1921,7 @@
 /* Scrollbars */
 /** Affect all scrollbars */
 #app-mount div[class*="scroller"]::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(255, 255, 255, .1);
     border-color: rgba(0, 0, 0, 0);
 }
 
