@@ -1235,12 +1235,6 @@
     border-radius: 0;
 }
 
-/** Checkboxes **/
-#app-mount div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span {
-    background-color: #560b71;
-    border-color: #560b71;
-}
-
 /* Tooltips */
 #app-mount div[class*="layerContainer"] div[class*="layer"] > div[class*="tooltip"] {
     background-color: rgba(0, 13, 82, .95);
