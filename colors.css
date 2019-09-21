@@ -1,0 +1,79 @@
+.moonlit-sonata { 
+    /* Default */
+    color: #1e0029;
+    /* Hover */
+    color: rgba(30, 0, 41, 0.4);
+    /* Selected */
+    color: rgba(90, 23, 65, 0.3);
+    /* Guild images and stuff */
+    color: #350048, rgba(53, 0, 72);
+    /* Lighter */
+    color: #560075, rgba(86, 0, 117, .95); /* TRANSPARENCY */
+    /* Darker */
+    color: #290038, rgba(41, 0, 56, .95); /* Changed to .95 for the sake of transparency  */
+    /* Extreme darker */
+    color: #1e0029, rgba(30, 0, 41, .95); /* ^ */ /* That looks like a face aw cute */
+    /* Darkest */
+    color: #2e053b, rgba(46, 5, 59, .85);
+    /* Super omega dark transparency for search results + SETTINGS */
+    color: #22002d, rgba(34, 0, 45, 0.6); 
+    /* Brighter transparency */
+    color: rgba(59, 0, 78, 0.2);
+    /* Separators */
+    color: #ff75ca, rgba(255, 117, 203, 0.1);
+    /* Mostly borders and modal footers */
+    color: #320042;
+    /* Links */
+    color: #d359ff, rgb(211, 89, 255);
+    /* Not hovered links -- er :hover */
+    color: #9a08d0, rgb(154, 8, 208);
+    /* Default image color */
+    filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
+    /* Files, SVGs */
+    filter: hue-rotate(100deg) saturate(200%);
+    /* Settings button  */
+    color: rgba(112, 15, 76);
+    /* Ctrl C + Ctrl V usage */
+    background-color: rgba(95, 9, 64, 0.1);
+    border-color: rgba(39, 3, 26, 0.85);
+}
+
+.godzillas-wrath {
+    /* Default */
+    color: #010b3d;
+    /* Hover */
+    color: rgba(1, 11, 61, 0.4);
+    /* Selected */
+    color: rgba(1, 11, 61, 0.3);
+    /* Guild images and stuff */
+    color: #010b3d, rgba(53, 0, 72);
+    /* Lighter */
+    color: #010b3d, rgba(1, 11, 61, .95); /* TRANSPARENCY */
+    /* Darker */
+    color: #000d52, rgba(0, 13, 82, .95); /* Changed to .95 for the sake of transparency  */
+    /* Extreme darker */
+    color: #1e0029, rgba(30, 0, 41, .95); /* ^ */ /* That looks like a face aw cute */
+    /* Darkest */
+    color: #042c42, rgba(4, 44, 66, .85);
+    /* Super omega dark transparency for search results + SETTINGS */
+    color: #042c42, rgba(4, 44, 66, 0.95); 
+    /* Brighter transparency */
+    color: rgba(59, 0, 78, 0.2);
+    /* Separators */
+    color: #ff75ca, rgba(255, 117, 203, 0.1);
+    /* Mostly borders and modal footers */
+    color: #320042;
+    /* Links */
+    color: #d359ff, rgb(211, 89, 255);
+    /* Not hovered links -- er :hover */
+    color: #9a08d0, rgb(154, 8, 208);
+    /* Default image color */
+    filter: hue-rotate(-35deg) saturate(800%) brightness(0.65);
+    /* Files, SVGs */
+    filter: hue-rotate(100deg) saturate(200%);
+    /* Settings button  */
+    color: rgba(112, 15, 76);
+    /* Ctrl C + Ctrl V usage */
+    background-color: rgba(95, 9, 64, 0.1);
+    border-color: rgba(39, 3, 26, 0.85);
+}

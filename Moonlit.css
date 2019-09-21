@@ -188,7 +188,7 @@
 */
 
 /* Guild list background */
-#app-mount div[role="dialog"] > [class*="container"][class*="flex"][class*="container"] > [class*="wrapper"] {
+#app-mount div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"] {
     background-color: transparent;
 }
 
@@ -227,7 +227,9 @@
 /* Channel list */
 /** Background of current user below recent DMs/channels */
 #app-mount div[class*="container"] div[class*="wrapper"],
+#app-mount div[class*="container"] div[class*="sidebar"],
 #app-mount div[class*="container"] div[class*="privateChannels"],
+#app-mount div[class*="container"] div[class*="privateChannels"] div[class*="scroller"],
 #app-mount div[class*="content"] div[class*="container"],
 #app-mount div[class*="panels"],
 #app-mount div[class*="flex"] > div[class*="container"]:not([class*="hasDropdown"]) {
@@ -258,7 +260,7 @@
 #app-mount div[class*="modeMuted"] svg[class*="icon-1_"],
 #app-mount div[class*="modeMuted"] div[class*="name"],
 #app-mount div[class*="modeMuted"] span[class*="name"] {
-    color: #717479 !important;
+    color: #8e8e8e !important;
 }
 
 #app-mount div[class*="channels"] div[class*="name"],
@@ -635,6 +637,10 @@
     background: transparent;
 }
 
+#app-mount div[class*="chat"] > div[class*="content"]:before {
+    box-shadow: none;
+}
+
 /** Channel members**/
 #app-mount div[class*="chat"] > div[class*="content"] div[class*="members"] {
     background-color: transparent; /* TODO: Darken? */
@@ -685,7 +691,8 @@
 }
 
 /** Messages background **/
-#app-mount div[class*="chat"] > div[class*="content"] div[class*="messagesWrapper"] {
+#app-mount div[class*="chat"] > div[class*="content"] div[class*="messagesWrapper"],
+#app-mount div[class*="chat"] > div[class*="content"] div[class*="messages"] {
     background-color: transparent;
 }
 
@@ -945,7 +952,8 @@
 #app-mount [class*="emptyWumpus"], 
 #app-mount [class*="emptyStateImage"], 
 #app-mount [class*="contentColumn"] [class*="vertical"] [class*="image-"][class*="marginBottom40"], 
-#app-mount [class*="contentRegion"] [class*="systemPad"] [class*="image-"][class*="marginBottom40"], 
+#app-mount [class*="contentRegion"] [class*="systemPad"] [class*="image-"][class*="marginBottom40"],
+#app-mount [class*="noChannel"] [class*="image-"][class*="marginBottom40"], 
 #app-mount [class*="userSettingsSecurityImage-"] {
     filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
 }
@@ -1134,6 +1142,10 @@
 #app-mount div[class*="userPopout"] > div[class*="body"],
 #app-mount div[class*="userPopout"] > div[class*="footer"] {
     background-color: rgba(41, 0, 56, .95);
+}
+
+#app-mount div[class*="userPopout"] div[class*="scrollerWrap"] div[class*="scroller"] {
+    background-color: transparent;
 }
 
 #app-mount div[class*="userPopout"] > div[class*="body"] > div[class*="note"] textarea:focus {
@@ -1327,11 +1339,16 @@
     box-shadow: none;
 }
 
+#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] [class*="sadImage"] {
+    filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
+}
+
 #app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="stickyHeader"] {
     background-color: transparent;
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="stickyHeader"] div[class*="category"] {
+#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="stickyHeader"] div[class*="category"],
+#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] input {
     color: #d4bfcf;
 }
 
@@ -1418,6 +1435,10 @@
     background-color:rgba(30, 0, 41, .95);
 }
 
+#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionNormal"] [class*="tabBarContainer"] {
+    border-color: transparent;
+}
+
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionPlaying"],
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionStreaming"] {
     background-color:rgba(30, 0, 41, .95);
@@ -1431,6 +1452,10 @@
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionSpotify"] [class*="lookInverted"],
 #app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionStreaming"] [class*="lookInverted"] {
     color: #d359ff;
+}
+
+#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] div[class*="emptyIconGuilds"] {
+    filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
 }
 
 /*** Lighter body color ***/
@@ -1546,7 +1571,7 @@
     display: none;
 }
 
-#app-mount div[class*="wrapper"] div[class*="modal"] div[class*="header"] > div[class*="marginTop4"] {
+#app-mount div[class*="wrapper"] div[class*="modal"] div[class*="header"] > div[class*="marginTop"] {
     background-color: rgba(30, 0, 41, 0.4);
 }
 
@@ -1652,7 +1677,9 @@
 /* or GUILD_SETTINGS */
 /* or just fucking calling it Settings idiot. */
 #app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]),
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] {
+#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"],
+#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="scroller"],
+#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="scroller"] {
     background-color: transparent;
 }
 
@@ -2159,7 +2186,7 @@
 
 /* Quick Switcher */
 #app-mount [class*="quickswitcher"] {
-    background:  rgba(41, 0, 56, .95);
+    background-color:  rgba(41, 0, 56, .95);
 }
 
 #app-mount [class*="quickswitcher"] input {
@@ -2175,6 +2202,20 @@
     box-shadow: inset 0 -4px 0 rgba(30, 0, 41, .95);
     border: 1px solid #2e053b;
     background-color: rgba(86, 0, 117, .95);
+}
+
+/* Spoilers */
+#app-mount [class*="spoilerText"][class*="hidden"] {
+    background-color: #560075;
+}
+
+#app-mount [class*="spoilerText"][class*="hidden"]:hover {
+    background-color: rgb(86, 0, 117, .6);
+}
+
+/* Byn got fed up */
+#app-mount [class*="scroller-"] {
+    background-color: transparent;
 }
 
 .theme-dark {
