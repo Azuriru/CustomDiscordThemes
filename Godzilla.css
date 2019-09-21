@@ -1981,7 +1981,7 @@
 /* Scrollbars */
 /** Affect all scrollbars */
 #app-mount div[class*="scroller"]::-webkit-scrollbar-thumb {
-    background-color: rgba(1, 11, 61, 0.5);
+    background-color: rgba(0, 0, 0, .5);
     border-color: rgba(0, 0, 0, 0);
 }
 
