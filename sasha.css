@@ -1074,10 +1074,10 @@ div[class*="theme-"] > div[class*="modal-"] > div[class*="inner-"] > form[class*
 }
 
 /** TODO: Create group DM modal/popout/both **/
-div[class*="popouts-"] {
+/* div[class*="popouts-"] {
 
 }
-
+*/
 /* Configuration */
 /* or GUILD_SETTINGS */
 #app-mount > div[class*="app-"] > div[class*="app-"] > div[class*="layers-"] > div[class*="layer-"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]),

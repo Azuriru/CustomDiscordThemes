@@ -7,7 +7,7 @@
     background: transparent;
 }
 
-#app-mount canvas {
+#app-mount [class*="splashBackground"] > canvas {
     display: none;
 }
 
@@ -38,12 +38,12 @@
     background: transparent;
 }
 
-#app-mount > div[class*="app"] div[class*="container"] [class*="quote"][class*="contentBase"] {
+#app-mount div[class*="app"] div[class*="container"] [class*="quote"][class*="contentBase"] {
     color: #fff;   
 }
 
-#app-mount > div[class*="app"] div[class*="container"] [class*="contentBase"],
-#app-mount > div[class*="app"] div[class*="container"] [class*="problemsText"] {
+#app-mount div[class*="app"] div[class*="container"] [class*="contentBase"],
+#app-mount div[class*="app"] div[class*="container"] [class*="problemsText"] {
     color: #bdbdbd;   
 }
 
@@ -186,7 +186,7 @@
 /* Channel list */
 /** Background of current user below recent DMs/channels */
 #app-mount div[class*="container"] div[class*="wrapper"],
-#app-mount div[class*="container"] div[class*="sidebar"],
+#app-mount div[class*="container"] div[class*="sidebar"]:not([class*="flex"]),
 #app-mount div[class*="container"] div[class*="privateChannels"],
 #app-mount div[class*="container"] div[class*="privateChannels"] div[class*="scroller"],
 #app-mount div[class*="content"] div[class*="container"],
@@ -299,57 +299,55 @@
 }
 
 /*** Server Boost ***/
-#app-mount header[class*="header"] [class*="iconBackgroundTier"] {
-    color: #320042;
+#app-mount div[class*="perksModalContentWrapper"] div[class*="ctaBar"],
+#app-mount div[class*="perksModalContentWrapper"] li[class*="perk"]:not([class*="vailable"])  {
+    background: rgba(154, 8, 208, .3);
 }
 
-#app-mount header[class*="header"] [class*="iconTierNone"] {
-    color: #ff73fa;
-}
-
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] > div[class*="scrollerWrap"] div[class*="carousel"] div[class*="tierNoneContainer"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] > div[class*="carousel"] div[class*="tierNoneContainer"] {
     background-color: rgba(211, 89, 255, .2);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] > div[class*="scrollerWrap"] div[class*="carousel"] div[class*="tierNoneContainer"] div[class*="tierNoneCard"]{
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] > div[class*="carousel"] div[class*="tierNoneContainer"] div[class*="tierNoneCard"] {
     filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] > div[class*="scrollerWrap"] div[class*="carousel"] div[class*="tier"] div[class*="tierHeader"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] > div[class*="carousel"] div[class*="tier"] div[class*="tierHeader"] {
     background-color: rgba(154, 8, 208, .3);
+    color: #d8d8d8;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] > div[class*="scrollerWrap"] div[class*="carousel"] div[class*="tier"] div[class*="tierBody"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] > div[class*="carousel"] div[class*="tier"] div[class*="tierBody"] {
     background-color: rgba(154, 8, 208, .1);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] > div[class*="scrollerWrap"] div[class*="carousel"] div[class*="tier"] div[class*="tierHeader"] svg[class*="tierLock"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] > div[class*="carousel"] div[class*="tier"] div[class*="tierHeader"] svg[class*="tierLock"] {
     color: #d359ff;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] div[class*="carouselRightGradientEdge"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] div[class*="carouselRightGradientEdge"] {
     background-image: linear-gradient(270deg, rgba(154, 8, 208, .3), transparent);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="carouselContainer"] div[class*="carouselLeftGradientEdge"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="carouselContainer"] div[class*="carouselLeftGradientEdge"] {
     background-image: linear-gradient(90deg, rgba(154, 8, 208, .3), transparent);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="progressBar"] div[class*="barBackground"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="progressBar"] div[class*="barBackground"] {
     background-color: rgba(154, 8, 208, .3);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="progressBar"] div[class*="tierMarkerBackground"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="progressBar"] div[class*="tierMarkerBackground"] {
     background-image: none !important;
     background-color: #9a08d0;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="scrollerWrap"] > div[class*="scroller"] > div[class*="progressBar"] div[class*="tierMarkerInProgress"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="progressBar"] div[class*="tierMarkerInProgress"] {
     background-image: none !important;
-    background-color: #d359ff !important;
+    background-color: #7e08a9 !important;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] span[class*="boostCount"] {
+#app-mount div[class*="perksModalContentWrapper"] div[class*="modal"] > div[class*="inner"] > div[class*="modal"] span[class*="boostCount"] {
     background-color: #9a08d0;
 }
 
@@ -510,8 +508,8 @@
     background: none;
 }
 
-#app-mount div[class*="children"] div[class*="divider"],
-#app-mount div[class*="toolbar"] div[class*="divider"] {
+#app-mount div[class*="title"] div[class*="children"] div[class*="divider"],
+#app-mount div[class*="title"] div[class*="toolbar"] div[class*="divider"] {
     background: rgba(30, 0, 41, 0.3);
 }
 
@@ -720,6 +718,26 @@
     background: rgba(46, 5, 59, 0.75);
 }
 
+#app-mount div[class*="channelTextArea"] div[class*="autocomplete"][class*="autocomplete"] div[class*="result"] {
+    background: rgba(46, 5, 59, 0.1) !important;
+}
+
+#app-mount div[class*="channelTextArea"] div[class*="autocomplete"][class*="autocomplete"] div[class*="result"]:hover:after {
+    box-shadow: inset 0 0 0 2px #350048, inset 0 0 0 3px #560075;
+}
+
+#app-mount div[class*="channelTextArea"] div[class*="autocomplete"][class*="autocomplete"] div[class*="result"] div[class*="categoryFade"]:hover {
+    background-color: rgba(30, 0, 41, 0.8);
+}
+
+#app-mount div[class*="channelTextArea"] div[class*="autocomplete"][class*="autocomplete"] div[class*="result"] div[class*="categoryFadeBlurple"] {
+    background-color: rgba(154, 8, 208, .75);
+}
+
+#app-mount div[class*="channelTextArea"] div[class*="autocomplete"][class*="autocomplete"] div[class*="result"] div[class*="categoryFadeBlurple"]:hover {
+    background-color: rgba(154, 8, 208, .85);
+}
+
 /** Emoticon autocomplete popout **/
 #app-mount div[class*="channelTextArea"] div[class*="autocomplete"] {
     background: rgba(46, 5, 59, 0.6);
@@ -898,7 +916,7 @@
 #app-mount div[class*="gameLibrary"] > div[class*="libraryHeader"],
 #app-mount div[class*="root"] > div[class*="libraryHeader"],
 #app-mount div[class*="root"] {
-    background-color: transparent !important;
+    background-color: transparent;
     box-shadow: none;
 }
 
@@ -980,6 +998,10 @@
     background: transparent !important;
 }
 
+#app-mount div[class*="itemBackground"]:before {
+    background: rgba(90, 23, 65, 0.6);
+}
+
 /* Friends */
 /** Friends row hover **/
 #app-mount div[class*="friendsTable"] {
@@ -987,7 +1009,7 @@
     border-bottom-color: rgba(255, 255, 255, .1);
 }
 
-#app-mount div[class*="friendsTable"] div[class*="friendsTableHeader"] div[class*="friendsColumn"] {
+#app-mount div[class*="friendsTable"] div[class*="friendsTableHeader"] header[class*="friendsColumn"] {
     border-left-color: rgba(255, 255, 255, .1);
 }
 
@@ -1019,6 +1041,10 @@
 #app-mount div[class*="friendsTable"] div[class*="friendTableAddWrapper"] div[class*="friendTableAddHeader"] {
     background: transparent;
     border-bottom: none;
+}
+
+#app-mount div[class*="friendsTable"]:before {
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 /** Background for header, TODO: Sketchy af selector **/
@@ -1107,7 +1133,7 @@
     background-color: transparent;
 }
 
-#app-mount div[class*="userPopout"] > div[class*="body"] > div[class*="note"] textarea:focus {
+#app-mount div[class*="userPopout"] > div[class*="body"] div[class*="note"] textarea:focus {
     background-color: transparent;
 }
 
@@ -1119,6 +1145,7 @@
 #app-mount div[class*="userPopout"] > div[class*="footer"] > input[class*="quickMessage"]:hover,
 #app-mount div[class*="userPopout"] > div[class*="footer"] > input[class*="quickMessage"]:focus {
     background-color: rgba(86, 0, 117, .95);
+    border-color: transparent;
 }
 
 /** TODO: Add role + button **/
@@ -1248,83 +1275,83 @@
 
 /** Game popout **/
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="footer"],
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="footer"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="footer"] {
     background-color:rgba(30, 0, 41, .95);
 }
 
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="header"] > div[class*="players"],
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] > div[class*="players"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] > div[class*="players"] {
     background-color:rgba(30, 0, 41, .95);
 }
 
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="header"] div[class*="player"]:hover,
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] div[class*="player"]:hover {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] div[class*="player"]:hover {
     background-color: transparent;
 }
 
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="header"] > div[class*="news"],
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] > div[class*="news"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] > div[class*="news"] {
     background-color:rgba(30, 0, 41, .95);
 }
 
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="header"] > div[class*="newsEmpty"],
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] > div[class*="newsEmpty"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="header"] > div[class*="newsEmpty"] {
     filter: hue-rotate(135deg) saturate(2500%) brightness(0.35);
 }
 
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="footer"] > button[class*="lookFilled"],
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="footer"] > button[class*="lookFilled"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="footer"] > button[class*="lookFilled"] {
     background-color: rgba(86, 0, 117, .95);
 }
 
 #app-mount div[class*="popouts"] > div[role="dialog"] > div[class*="container"] > div[class*="footer"] > button[class*="lookFilled"]:hover,
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="footer"] > button[class*="lookFilled"]:hover {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="container"] > div[class*="footer"] > button[class*="lookFilled"]:hover {
     background-color: #1e0029;
 }
 
 /** Reactions popout **/
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="inner"] > div[class*="sidebar"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="inner"] > div[class*="sidebar"] {
     background-color: rgba(0, 0, 0, .3);
 }
 
-#app-mount div[class*="popouts"] + div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="inner"] > div[class*="reactors"] {
+#app-mount div[class*="popouts"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="inner"] > div[class*="reactors"] {
     background-color: transparent;
 }
 
 /** Emoticon picker popout**/
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] {
     background-color: rgba(46, 5, 59, 0.85);
     border-color: transparent;
     box-shadow: none;
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] [class*="sadImage"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="sadImage"] {
     filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="stickyHeader"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="stickyHeader"] {
     background-color: transparent;
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="stickyHeader"] div[class*="category"],
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] input {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="stickyHeader"] div[class*="category"],
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] input {
     color: #d4bfcf;
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="emojiItem"][class*="selected"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="emojiItem"][class*="selected"] {
     background-color: rgba(255, 255, 255, .1);
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="categories"] div[class*="item"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="categories"] div[class*="item"] {
     filter: hue-rotate(100deg) saturate(1000%) brightness(0.65);
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="categories"] div[class*="item"]:hover,
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="categories"] div[class*="item"][class*="selected"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="categories"] div[class*="item"]:hover,
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="categories"] div[class*="item"][class*="selected"] {
     filter: none !important; /* TODO: Figure out why I did this */
 }
 
-#app-mount div[class*="popouts"] div[role="dialog"][class*="popout"] div[class*="emojiPicker"] div[class*="scroller"]::-webkit-scrollbar-track {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] div[class*="scroller"]::-webkit-scrollbar-track {
     background-color: transparent;
 }
 
@@ -1390,73 +1417,73 @@
 
 /** User modal **/
 /*** Top color, TODO: Figure out alternate color for playing/Spotify ***/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionNormal"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionNormal"] {
     background-color:rgba(30, 0, 41, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionNormal"] [class*="tabBarContainer"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionNormal"] [class*="tabBarContainer"] {
     border-color: transparent;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionPlaying"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionStreaming"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionPlaying"],
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionStreaming"] {
     background-color:rgba(30, 0, 41, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionSpotify"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionSpotify"] {
     background-color:rgba(30, 0, 41, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionPlaying"] [class*="lookInverted"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionSpotify"] [class*="lookInverted"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionStreaming"] [class*="lookInverted"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionPlaying"] [class*="lookInverted"],
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionSpotify"] [class*="lookInverted"],
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="topSectionStreaming"] [class*="lookInverted"] {
     color: #d359ff;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] div[class*="emptyIconGuilds"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] div[class*="emptyIconGuilds"] {
     filter: hue-rotate(55deg) saturate(800%) brightness(0.65);
 }
 
 /*** Lighter body color ***/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] {
     background-color: rgba(41, 0, 56, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] {
     border-color: transparent;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"]:first-of-type {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"]:first-of-type {
     padding-bottom: 0;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="note"] > textarea {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="note"] > textarea {
     background-color: transparent;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="note"] > textarea:hover {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="note"] > textarea:hover {
     background-color: rgba(255, 255, 255, .04);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="note"] > textarea:focus {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="note"] > textarea:focus {
     background-color: rgba(255, 255, 255, .05);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="connectedAccounts"] > div[class*="connectedAccount"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="connectedAccounts"] > div[class*="connectedAccount"] {
     background-color: transparent;
     border-color: transparent;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="connectedAccounts"] > div[class*="connectedAccount"] svg[class*="connectedAccountVerifiedIcon"] path[fill='#4f545c'] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="userInfoSection"] > div[class*="connectedAccounts"] > div[class*="connectedAccount"] svg[class*="connectedAccountVerifiedIcon"] path[fill='#4f545c'] {
     fill: #560b71;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="emptyIconFriends"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="flex"][class*="vertical"][class*="justifyStart"][class*="root"] > div[class*="body"] div[class*="emptyIconFriends"] {
     filter: hue-rotate(85deg) saturate(1000%) brightness(0.65);
 }
 
 /** Channel description modal **/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] {
     border-color: transparent;
     box-shadow: none;
     border-radius: 10px;
@@ -1464,36 +1491,38 @@
     background-color: rgba(41, 0, 56, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="header"][class*="flex"][class*="horizontal"][class*="directionRow"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="header"][class*="flex"][class*="horizontal"][class*="directionRow"] + div[class*="content"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="header"][class*="flex"][class*="horizontal"][class*="directionRow"],
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="header"][class*="flex"][class*="horizontal"][class*="directionRow"] + div[class*="content"],
+#app-mount div[role="dialog"][class*="root"] {
     background-color: rgba(41, 0, 56, .95);
 }
 
 /*** Footer, the description doesn't have it but other modals do, like the changelog ***/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"],
+#app-mount div[role="dialog"][class*="root"] div[class*="footer"] {
     background-color:rgba(30, 0, 41, .95);
     box-shadow: none;
 }
 
 /** Footer button **/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"]:not([aria-label="Send a gift"]):not([class*="closeButton"]) {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"]:not([aria-label="Send a gift"]):not([class*="closeButton"]) {
     background-color: rgba(86, 0, 117, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"]:not([aria-label="Send a gift"]):not([class*="closeButton"]):hover {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"]:not([aria-label="Send a gift"]):not([class*="closeButton"]):hover {
     background-color: #1e0029;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"]:not([aria-label="Send a gift"]):not([class*="closeButton"]):hover [class*="contents"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"]:not([aria-label="Send a gift"]):not([class*="closeButton"]):hover [class*="contents"] {
     background-image: none;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"][class*="colorGrey"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="footer"] > button[class*="button"][class*="colorGrey"] {
     color: #b7b7b7;
 }
 
 /** Modal checkboxes **/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="content"] div[class*="switchItem"] div[class*="switch"]::before {
+#app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="content"] div[class*="switchItem"] div[class*="switch"]::before {
     background-color: #520000;
 }
 
@@ -1535,24 +1564,25 @@
 }
 
 /** Leave guild modal **/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] {
     box-shadow: none;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="header"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="footer"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="header"],
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="footer"] {
     background-color: rgba(41, 0, 56, .95);
     box-shadow: none;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="content"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="content"] {
     background-color:rgba(30, 0, 41, .95);
     padding-top: 12px;
+    border-radius: 0;
 }
 
 /** Pin message modal **/
 /*** message background ***/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="content"] div[class*="message"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="container"][class*="sizeSmall"] > div[class*="content"] div[class*="message"] {
     background-color: transparent;
     box-shadow: none;
 }
@@ -1560,68 +1590,68 @@
 /*** Button color ***/
 
 /** Change user nickname modal **/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) {
     box-shadow: none;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="header"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="header"],
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] {
     background-color: rgba(46, 5, 59, 0.85);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="footer"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="footer"] {
     background-color:rgba(30, 0, 41, .95);
     box-shadow: none;
 }
 
 /*** Submit button (or basically most footer buttons on modals) ***/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="submit"][class*="button"][class*="lookFilled"],
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="button"][class*="button"][class*="lookFilled"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="submit"][class*="button"][class*="lookFilled"],
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="button"][class*="button"][class*="lookFilled"] {
     background-color: rgba(154, 8, 208, .8);;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="submit"][class*="button"][class*="lookFilled"]:hover,
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="button"][class*="button"][class*="lookFilled"]:hover {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="submit"][class*="button"][class*="lookFilled"]:hover,
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"] > div[class*="footer"] > button[type="button"][class*="button"][class*="lookFilled"]:hover {
     background-color: #9a08d0;
 }
 
 /*** Input focus effect ***/
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] div[class*="input"] input[class*="input"] {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] div[class*="input"] input[class*="input"] {
     border-color: transparent;
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] div[class*="input"] input[class*="input"]:hover {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] div[class*="input"] input[class*="input"]:hover {
     background-color: rgba(30, 0, 41, .95);
 }
 
-#app-mount div[class*="theme"] > div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] div[class*="input"] input[class*="input"]:focus {
+#app-mount div[class*="modal"] > div[class*="inner"] > form[class*="modal"][class*="sizeSmall"]:not([class*="container"]) > div[class*="content"] div[class*="input"] input[class*="input"]:focus {
     border-color: transparent;
     background-color: rgba(86, 0, 117, .95);
 }
 
-#app-mount div[class*="theme"] [class*="cardPrimaryEditable"] {
+#app-mount [class*="cardPrimaryEditable"] {
     background: rgba(84, 7, 110, 0.2);
     border-color: #d359ff;
 }
 
-#app-mount div[class*="theme"] [class*="cardPrimaryEditable"][style*="background-color: rgb(114, 137, 218)"] {
+#app-mount [class*="cardPrimaryEditable"][style*="background-color: rgb(114, 137, 218)"] {
     background-color: #d359ff !important;
     border-color: #d359ff !important;
 }
 
-#app-mount div[class*="theme"] [class*="cardPrimaryEditable"][style*="background-color: rgb(114, 137, 218)"] [class*="checkbox"] {
+#app-mount [class*="cardPrimaryEditable"][style*="background-color: rgb(114, 137, 218)"] [class*="checkbox"] {
     border-color: white !important;
 }
 
-#app-mount div[class*="theme"] [class*="cardPrimaryEditable"][style*="background-color: rgb(114, 137, 218)"] [class*="checkbox"] svg[name="Checkmark"] polyline {
+#app-mount [class*="cardPrimaryEditable"][style*="background-color: rgb(114, 137, 218)"] [class*="checkbox"] svg[name="Checkmark"] polyline {
     stroke: white;
 }
 
-#app-mount div[class*="theme"] [class*="cardPrimaryOutline"] {
+#app-mount [class*="cardPrimaryOutline"] {
     border-color: #d359ff;
 }
 
-#app-mount div[class*="theme"] [class*="checkboxContainer"]:before {
+#app-mount [class*="checkboxContainer"]:before {
     background-color: #d359ff;
 }
 
@@ -1635,80 +1665,89 @@
 /* Configuration */
 /* or GUILD_SETTINGS */
 /* or just fucking calling it Settings idiot. */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]),
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="scroller"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="scroller"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]),
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="scroller"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="scroller"] {
     background-color: transparent;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] {
     background-color: rgba(34, 0, 45, 0.5);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] {
     background-color: rgba(0, 0, 0, .3);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="actionButton"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="actionButton"] {
     border-color: #ea5f2f;
     color: #ff916b;
     background: transparent;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="text"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="title"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="text"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="title"] {
     color: #cccccc;
 }
 
+/* Ticks */
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="item"][class*="box"] {
+    border-color: rgba(41, 0, 56, .8);
+}
+
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="passthroughSelected"][class*="box"] {
+    background-color: rgba(86, 0, 117, .5);
+}
+
 /** Nitro / Server Boost **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] [class*="item"][style*="color: rgb(114, 137, 218)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] [class*="item"][style*="color: rgb(114, 137, 218)"] {
     color: #d359ff !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] [class*="item"][style*="color: rgb(114, 137, 218)"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] [class*="item"][style*="color: rgb(114, 137, 218)"]:hover {
     background-color: rgba(30, 0, 41, 0.2) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] [class*="item"][style*="background-color: rgb(114, 137, 218)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] [class*="item"][style*="background-color: rgb(114, 137, 218)"] {
     background-color: #d359ff !important;
     color: white !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="progress"] [class*="background"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="progress"] [class*="background"] {
     color: rgba(154, 8, 208, .3);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="progress"] [class*="tierInProgress"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="progress"] [class*="tierInProgress"] {
     background-image: none !important;
     background-color: #9a08d0;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierHeader"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierHeader"] {
     background-color: rgba(154, 8, 208, .3);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierHeader"] svg[class*="tierLock"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierHeader"] svg[class*="tierLock"] {
     color: #d359ff;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierBody"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="content"] div[class*="tierBody"] {
     background-color: rgba(154, 8, 208, .1);
 }
 
 /** Sidebar item hover/selected effects **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="side"] > div[class*="item"]:hover,
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="side"] > div[class*="item"][class*="selected"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="side"] > div[class*="item"]:hover,
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="side"] > div[class*="item"][class*="selected"] {
     background-color: rgba(30, 0, 41, 0.2);
 }
 
 /** Non-image Server Guild Icon aka Byn / Bae / Bang / Doru / Lauty (to-be) **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="avatarUploaderInner"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="avatarUploaderInner"] {
     background-color: #350048; 
 }
 
 /* Dropdowns and buttons */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] input[class*="input"]:not([placeholder="Search for Games"]),
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] input[class*="input"]:not([placeholder="Search for Games"]),
 #app-mount div[class*="select"] div[class*="container"],
 #app-mount div[class*="select"] div[class*="control"] {
     background-color: rgba(84, 7, 110, 0.1);
@@ -1720,45 +1759,45 @@
     border-color: rgba(46, 5, 59, 0.9);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorGrey"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorGrey"] {
     color: #9a08d0;
     background-color: rgba(84, 7, 110, 0.1);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='vertical'] [class*="colorBrand"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='vertical'] [class*="colorBrand"] {
     color: #d359ff;
     background-color: rgba(112, 15, 76, 0.1);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='vertical'] [class*="colorBrand"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='vertical'] [class*="colorBrand"]:hover {
     color: #d359ff;
     background-color: rgba(112, 15, 76, 0.3);
 }
 
 /* Audit Log */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] {
     border-color: #1e0029;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="headerClickable"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="headerDefault"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="headerClickable"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="headerDefault"] {
     background-color: rgba(30, 0, 41, 0.2);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="timestamp"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="timestamp"] {
     color: #c3c3c3;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="headerExpanded"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="headerExpanded"] {
     background-color: rgba(30, 0, 41, 0.3);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="divider"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="divider"] {
     background-color: #1e0029;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="changeDetails"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*='auditLog'] div[class*="changeDetails"] {
     background-color: rgba(30, 0, 41, 0.1);
 }
 
@@ -1776,138 +1815,138 @@
 }
 
 /* Roles */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] [class*="role"][class*="themed"][class*="selected"][class*="item"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] [class*="role"][class*="themed"]#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="selected"][class*="item"]:hover,
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="topPill"] [class*="themed"][class*="selected"][class*="item"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="topPill"] [class*="themed"][class*="selected"][class*="item"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] [class*="role"][class*="themed"][class*="selected"][class*="item"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] [class*="role"][class*="themed"]#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="selected"][class*="item"]:hover,
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="topPill"] [class*="themed"][class*="selected"][class*="item"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="topPill"] [class*="themed"][class*="selected"][class*="item"]:hover {
     background-color: rgba(30, 0, 41, 0.4) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] [class*="themed"][class*="item"]:hover,
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="topPill"] [class*="themed"][class*="item"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] [class*="themed"][class*="item"]:hover,
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="topPill"] [class*="themed"][class*="item"]:hover {
     background-color: rgba(30, 0, 41, 0.2) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="description"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="labelDescriptor"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="description"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="labelDescriptor"] {
     color: #c1c1c1;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] div[class*="separator"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="side"] div[class*="separator"] {
     background-color: #330039;
 }
 
 /* Light blue colored buttons */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorBrand"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="questionMark"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorBrand"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="questionMark"] {
     background-color: #d359ff;
     color: white;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorBrand"]:hover,
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="questionMark"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="colorBrand"]:hover,
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="questionMark"]:hover {
     background-color: #9a08d0;
 }
 
 /* Primary buttons */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="lookFilled"][class*="colorPrimary"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: #560075;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="lookFilled"][class*="colorPrimary"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="lookFilled"][class*="colorPrimary"]:hover {
     background-color: #5f0082;
 }
 
 /* Webhooks */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='remove'][class*="button"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='emojiRemove'][class*="button"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='remove'][class*="button"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*='emojiRemove'][class*="button"] {
     background-color: #320042 !important;
     box-shadow: 0 0 0 1px #290038, 0 1px 5px 0 rgba(0,0,0,.3);
 }
 
 /** Sidebar separators **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="separator"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="sidebarRegion"] div[class*="separator"] {
     background-color: #330039;
 }
 
 /** Video preview wrapper **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="previewOverlay"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="previewOverlay"] {
     background: transparent;
     border-color: transparent;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="previewContainer"] .media-engine-video {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="previewContainer"] .media-engine-video {
     background: transparent;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="micTest"] div[class*="progress"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="micTest"] div[class*="progress"] {
     background: #9a08d0;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="micTest"] div[class*="notches"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="micTest"] div[class*="notches"] {
     filter: hue-rotate(100deg) saturate(1000%) brightness(.1);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="previewContainer"] div[class*="preview"] img {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="userSettingsVoice"] div[class*="previewContainer"] div[class*="preview"] img {
     filter: hue-rotate(100deg) saturate(1000%) ;
 }
 
 /* Lol wot
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] {
     left: -10px;
     width: calc(100% + 20px);
 } */
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] div[class*="gameNameLastPlayed"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] div[class*="gameNameLastPlayed"] {
     padding-left: 12px;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] div[class*="gameNameLastPlayed"] + div{
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] div[class*="gameNameLastPlayed"] + div{
     padding-right: 12px;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] div[class*="gameNameLastPlayed"] div[class*="lastPlayed"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="game"] div[class*="gameNameLastPlayed"] div[class*="lastPlayed"] {
     color: #b9b9b9;
 }
 
 /** Content area cards **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="card"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="card"] {
     border-color: transparent;
     background-color: transparent;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="card"]:before {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="card"]:before {
     background-color: rgba(84, 7, 110, 0.2);
     border-color: rgba(46, 5, 59, 0.85);
 }
 
 /*** Privacy & Safety clickable cards ***/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="card"][class*="item"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="card"][class*="item"]:hover {
     background-color: rgba(46, 5, 59, 0.3);
 }
 
 /**** !important to override inline styles ****/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="border-color"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="border-color"] {
     border-color: transparent !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(114, 137, 218)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(114, 137, 218)"] {
     background-color: rgba(211, 89, 255, .7) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(67, 181, 129)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(67, 181, 129)"] {
     background-color: rgba(97, 255, 159, 0.7) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(250, 166, 26)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(250, 166, 26)"] {
     background-color: rgba(255, 202, 69, 0.7) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(245, 119, 49)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(245, 119, 49)"] {
     background-color: rgba(255, 133, 65, 0.7) !important;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(240, 71, 71)"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="radioGroup"] div[class*="card"][class*="item"][style*="background-color: rgb(240, 71, 71)"] {
     background-color: rgba(251, 50, 50, 0.7) !important;
 }
 
@@ -1920,14 +1959,14 @@
 }
 
 /** Content area red buttons **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="deleteApp"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="deleteApp"] {
     background: rgba(30, 0, 41, 0.5);
     color: rgb(255, 200, 236);
     border-color: transparent;
     transition: background-color 200ms ease;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="deleteApp"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] button[class*="deleteApp"]:hover {
     background: rgba(30, 0, 41, 0.7);
 }
 
@@ -1938,128 +1977,128 @@
 }
 
 /** Connections boxes **/
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="connectedAccounts"] div[class*="accountBtn"] button[class*="accountBtnInner"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="connectedAccounts"] div[class*="accountBtn"] button[class*="accountBtnInner"] {
     background-color: rgba(30, 0, 41, 0.2);
     border-color: transparent;
     transition: background-color 200ms ease;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="connectedAccounts"] div[class*="accountBtn"] button[class*="accountBtnInner"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="connectedAccounts"] div[class*="accountBtn"] button[class*="accountBtnInner"]:hover {
     background-color: rgba(30, 0, 41, 0.4);
 }
 
 /* Billing and shit */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="paymentPane"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="paymentPane"] {
     background-color: rgba(30, 0, 41, 0.3) !important;
     color: #f6f6f7;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="paginator"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="hoverablePayment"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="payment"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="paginator"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="hoverablePayment"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="payment"] {
     background-color: transparent;
     border-color: #560075;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="hoverablePayment"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="hoverablePayment"]:hover {
     background-color: rgba(30, 0, 41, 0.5);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="expandedInfo"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="expandedInfo"] {
     background-color: rgba(30, 0, 41, 0.2);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="bottomDivider"], 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="pageIndicator"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="pageButtonPrev"],
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="pageButtonNext"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="bottomDivider"], 
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="pageIndicator"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="pageButtonPrev"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="paymentHistory"] [class*="pageButtonNext"] {
     border-color: #320042;
     color: #dedede;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] svg[class*="disabled"]:hover {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] svg[class*="disabled"]:hover {
     border-color: #750f4e !important;
     color: #bd2f87 !important;
 }
 
 /* Voice and Video */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="bar"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="bar"]:not([class*="sidebar"]) {
     background: #290038;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="barFill"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] div[class*="barFill"] {
     background: #d359ff;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] span[class*="bubble"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] span[class*="bubble"] {
     background-color: rgba(41, 0, 56, .95);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] span[class*="bubble"]::before {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] span[class*="bubble"]::before {
     border-top-color: rgba(41, 0, 56, .95);
 }
 
 /* Keybinds */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="ghostPill"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="ghostPill"] {
     background: rgba(30, 0, 41, 0.5);
     color: rgb(255, 200, 236);
 }
 
 /* Game Activity */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="notDetected"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="notDetected"] {
     background-color: rgba(46, 5, 59, 0.6);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="gameNameInput"]:hover,
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="gameNameInput"]:focus {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="gameNameInput"]:hover,
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="gameNameInput"]:focus {
     border-color: rgba(46, 5, 59, 0.85);
     background-color: rgba(46, 5, 59, 0.4);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="gameNameLastPlayed"]:not([class*="vertical"]),
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="game"][class*="card"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="gameNameLastPlayed"]:not([class*="vertical"]),
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="game"][class*="card"] {
     box-shadow: 0 1px 0 0 #320042;
 }
 
 /* Activity Feed */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"]  div[class*="searchBox"]:not([class*="searchBoxInputWrapper"]) {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"]  div[class*="searchBox"]:not([class*="searchBoxInputWrapper"]) {
     background-color: rgba(46, 5, 59, 0.4);
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"]  div[class*="searchResultsContainer"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"]  div[class*="searchResultsContainer"] {
     background-color: rgba(46, 5, 59, 0.85);
     box-shadow: 0 1px 5px 1px #320042;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"]  div[class*="searchResultsContainer"] [class*="searchOption"][class*="selected"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"]  div[class*="searchResultsContainer"] [class*="searchOption"][class*="selected"] {
     background-color: rgba(84, 7, 110, 0.1);
 }
 
 /* Language */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="contentColumn"] [class*="item"]:not([class*="itemContainer"]):not([class*="size14"]):not([class*="itemIcon"]) {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="contentColumn"] [class*="item"]:not([class*="itemContainer"]):not([class*="size14"]):not([class*="itemIcon"]):not([class*="card"]):not([role*="button"]):not([class*="box"]) {
     box-shadow: inset 0 -1px 0 0 #320042;
 }
 
 /* Notifications */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="notificationsSound-"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="notificationsSound-"] {
     box-shadow: inset 0 -1px 0 0 #320042;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="notificationsSound-"]:last-of-type {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="notificationsSound-"]:last-of-type {
     box-shadow: none;
 }
 
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="divider"] {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="divider"] {
     border-color: rgba(30, 0, 41, 0.3);
 }
 
 /* Waaaaiiiittt you have unsaved changes */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="noticeRegion"] [class*="container"] {
-    background-color: rgba(46, 5, 59, 0.85);
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="noticeRegion"] [class*="container"] {
+    background-color: rgba(46, 5, 59, 0.85) !important;
 }
 
 /* UNLEASH THE BAN HAMMER */
-#app-mount > div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="bannedUser"] [class*="username"] [class*="discrim"],
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[class*="layer"]:-webkit-any([aria-label$="_SETTINGS"], [aria-label="RTC_DEBUG"]) div[class*="standardSidebarView"] > div[class*="contentRegion"] [class*="bannedUser"] [class*="username"] [class*="discrim"],
 #app-mount [class*="bannedUserModal"] [class*="reason"],
 #app-mount [class*="bannedUserModal"] [class*="userDiscrim"] {
     color: #a7a7a7;
@@ -2174,7 +2213,7 @@
 
 /* Byn got fed up */
 #app-mount [class*="scroller-"] {
-    background-color: transparent;
+    background: transparent;
 }
 
 .theme-dark {
