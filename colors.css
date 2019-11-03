@@ -1,3 +1,79 @@
+.darkest-times { 
+    /* Default */
+    color: #5a1741;
+    /* Hover */
+    color: rgba(90, 23, 65, 0.4);
+    /* Selected */
+    color: rgba(90, 23, 65, 0.3);
+    /* Guild images and stuff */
+    color: #4e1037, rgba(78, 16, 55);
+    /* Lighter */
+    color: #560a4d, rgba(86, 10, 77, .95); /* TRANSPARENCY */
+    /* Darker */
+    color: #380831, rgba(56, 8, 49, .95); /* Changed to .95 for the sake of transparency  */
+    /* Extreme darker */
+    color: #2d0728, rgba(45, 7, 40, .95); /* ^ */ /* That looks like a face aw cute */
+    /* Darkest */
+    color: #27031a, rgba(39, 3, 26, 0.85);
+    /* Super omega dark transparency for search results + SETTINGS */
+    color: #21041d, rgba(33, 4, 29, 0.6); 
+    /* Brighter transparency */
+    color: rgba(95, 9, 64, 0.2);
+    /* Separators */
+    color: #ff75ca, rgba(255, 117, 203, 0.1);
+    /* Mostly borders and modal footers */
+    color: #4a0831;
+    /* Links */
+    color: #cc3e97, rgb(204, 62, 151);
+    /* Not hovered links -- er :hover */
+    color: #981f6b, rgb(152, 31, 107);
+    /* Default image color */
+    filter: hue-rotate(95deg) saturate(800%) brightness(0.65);
+    /* Files, SVGs */
+    filter: hue-rotate(100deg) saturate(200%);
+    /* Settings button  */
+    color: rgba(112, 15, 76);
+    /* Ctrl C + Ctrl V usage */
+    background-color: rgba(95, 9, 64, 0.1);
+    border-color: rgba(39, 3, 26, 0.85);
+}
+
+.brightest-place { 
+    /* Default */
+    color: #260000;
+    /* Hover */
+    color: rgba(38, 0, 0, 0.4);
+    /* Selected */
+    color: rgba(38, 0, 0, 0.3);
+    /* Guild images and stuff */
+    color: #520000, rgba(82, 0, 0);
+    /* Lighter */
+    color: #460000, rgba(70, 0, 0, .95);
+    /* Darker */
+    color: #310a0a, rgba(49, 10, 10, .95);
+    /* Extreme darker + for search results + SETTINGS*/
+    color: #270000, rgba(39, 0, 0, .95);
+    /* Darkest */
+    color: #320000, rgba(50, 0, 0, 0.85);
+    /* Brighter transparency */
+    color: rgba(111, 0, 0, 0.2);
+    /* Mostly borders and modal footers */
+    color: #460000;
+    /* Links */
+    color: #ff916b, rgba(255, 145, 107);
+    /* Not hovered links -- er :hover */
+    color: #ea5f2f, rgba(234, 95, 47);
+    /* Default image color */
+    filter: hue-rotate(140deg) saturate(1200%) brightness(0.7);
+    /* Files, Embeds */
+    filter: hue-rotate(140deg) saturate(200%);
+    /* Settings button  */
+    color: rgba(175, 47, 2);
+    /* Ctrl C + Ctrl V usage */
+    background-color: rgba(111, 0, 0, 0.1);
+    border-color: rgba(50, 0, 0, 0.85);
+}
+
 .moonlit-sonata { 
     /* Default */
     color: #1e0029;
