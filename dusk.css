@@ -13,7 +13,7 @@
 }
 
 #app-mount.day [class*="rightSplit"] {
-    background: url(https://cdn.discordapp.com/attachments/505815497598828570/571515379399000074/unknown.png) center / cover no-repeat fixed;
+    background: url(https://cdn.discordapp.com/attachments/595506142126538753/602478617553010704/Opalset.png) center / cover no-repeat fixed;
 }
 
 #app-mount.day [class*="rightSplit"] img {
@@ -32,7 +32,7 @@
     margin: -40px;
     z-index: -1;
     filter: blur(10px);
-    background: url(https://cdn.discordapp.com/attachments/505815497598828570/571515379399000074/unknown.png) center / cover no-repeat fixed;
+    background: url(https://cdn.discordapp.com/attachments/595506142126538753/602478617553010704/Opalset.png) center / cover no-repeat fixed;
 }
 
 #app-mount.day [class*="leftSplit"] [class*="wrapper"] [class*="authBox"] [class*="subTitle"] {
@@ -57,7 +57,7 @@
 /* Pseudo-element to allow for custom filters and stuff, also nicer positioning than background-size: cover */
 #app-mount.day div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[role="dialog"][class*="layer"]::before {
     content: '';
-    background-image: url(https://cdn.discordapp.com/attachments/505815497598828570/571515379399000074/unknown.png);
+    background-image: url(https://cdn.discordapp.com/attachments/595506142126538753/602478617553010704/Opalset.png);
     background-color: #4d0009;
     background-repeat: no-repeat;
     background-size: cover;
@@ -72,9 +72,10 @@
 
 /* Loading */
 #app-mount.day [class*="app"] > [class*="container"][class*="fixClipping"]::before,
-#app-mount.day div[class*="app"] > div[class*="app"] + div[class*="container"]::before {
+#app-mount.day div[class*="app"] > div[class*="app"] + div[class*="container"]::before,
+#app-mount.day div[class*="perksModalContentWrapper"]::before {
     content: '';
-    background-image: url(https://cdn.discordapp.com/attachments/505815497598828570/571515379399000074/unknown.png);
+    background-image: url(https://cdn.discordapp.com/attachments/595506142126538753/602478617553010704/Opalset.png);
     background-color: #4d0009;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,6 +253,10 @@
 
 #app-mount.day div[class*="container"] div[class*="sidebar"]:not([class*="flex"]){
     background: rgba(38, 0, 0, .2);
+}
+
+#app-mount.day div[class*="container"] div[class*="reactors"] {
+    background: rgba(49, 10, 10, .1);
 }
 
 #app-mount.day div[class*="panels"] {
@@ -819,15 +824,18 @@
 }
 
 /** Embeds **/
-#app-mount.day div[class*="embedInner"] {
+#app-mount.day div[class*="embedWrapper"] {
     background-color: rgba(39, 0, 0, 0.6);
     border-color: transparent;
 }
 
 /*** Embed default pill + quote color ***/
-#app-mount.day div[class*="embedPill"],
 #app-mount.day div[class*="blockquoteDivider"] {
     background-color: #260000 !important;
+}
+
+#app-mount.day div[class*="embedWrapper"] {
+    border-color: #260000 !important
 }
 
 #app-mount.day div[class*="isMentioned"]:after {
@@ -878,6 +886,7 @@
 /*** Background ***/
 #app-mount.day div[class*="message"] div[class*="markup"] code {
     background-color: transparent;
+    border-color: rgba(50, 0, 0, 0.8);
 }
 
 /* Activity feed */
@@ -968,7 +977,8 @@
     background-color: rgba(49, 10, 10, .9);
 }
 
-#app-mount.day div[class*="activityFeed"] div[class*="popoutContainer"] div[class*="popout"] div[class*="memberListItem"]:hover {
+#app-mount.day div[class*="activityFeed"] div[class*="popoutContainer"] div[class*="popout"] div[class*="memberListItem"]:hover,
+#app-mount.day div[class*="guildPopout"] {
     background-color: transparent;
 }
 
@@ -1557,6 +1567,18 @@
 #app-mount.day div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="header"][class*="flex"][class*="horizontal"][class*="directionRow"] + div[class*="content"],
 #app-mount.day div[role="dialog"][class*="root"] {
     background-color: rgba(49, 10, 10, .95);
+}
+
+#app-mount.day div[role="dialog"][class*="root"] div[class*="header"] {
+    background: rgba(39, 0, 0, .95);
+}
+
+#app-mount.day div[role="dialog"][class*="root"] [class*="header"] div[class*="icon"] {
+    filter: hue-rotate(140deg) brightness(1.1);
+}
+
+#app-mount.day div[role="dialog"][class*="root"] [class*="header"] div[class*="channel"] {
+    background: rgba(49, 10, 10, .95);
 }
 
 /*** Footer, the description doesn't have it but other modals do, like the changelog ***/
@@ -2565,6 +2587,10 @@
     background: rgba(78, 16, 55, .2);
 }
 
+#app-mount div[class*="container"] div[class*="reactors"] {
+    background: rgba(56, 8, 49, .1);
+}
+
 #app-mount div[class*="panels"] {
     background: rgba(78, 16, 55, .1);
 }
@@ -3130,15 +3156,18 @@
 }
 
 /** Embeds **/
-#app-mount div[class*="embedInner"] {
+#app-mount div[class*="embedWrapper"] {
     background-color: rgba(33, 4, 29, 0.6);
     border-color: transparent;
 }
 
 /*** Embed default pill + quote color ***/
-#app-mount div[class*="embedPill"],
 #app-mount div[class*="blockquoteDivider"] {
     background-color: #5a1741 !important;
+}
+
+#app-mount div[class*="embedWrapper"] {
+    border-color: #5a1741 !important
 }
 
 #app-mount div[class*="isMentioned"]:after {
@@ -3189,6 +3218,7 @@
 /*** Background ***/
 #app-mount div[class*="message"] div[class*="markup"] code {
     background-color: transparent;
+    border-color: rgba(39, 3, 26, 0.8);
 }
 
 /* Activity feed */
@@ -3279,7 +3309,8 @@
     background-color: rgba(53, 10, 39, .9);
 }
 
-#app-mount div[class*="activityFeed"] div[class*="popoutContainer"] div[class*="popout"] div[class*="memberListItem"]:hover {
+#app-mount div[class*="activityFeed"] div[class*="popoutContainer"] div[class*="popout"] div[class*="memberListItem"]:hover,
+#app-mount div[class*="guildPopout"] {
     background-color: transparent;
 }
 
@@ -3872,6 +3903,18 @@
 #app-mount div[class*="modal"] > div[class*="inner"] > div[class*="modal"] > div[class*="header"][class*="flex"][class*="horizontal"][class*="directionRow"] + div[class*="content"],
 #app-mount div[role="dialog"][class*="root"] {
     background-color: rgba(56, 8, 49, .95);
+}
+
+#app-mount div[role="dialog"][class*="root"] div[class*="header"] {
+    background: rgba(45, 7, 40, .95);
+}
+
+#app-mount div[role="dialog"][class*="root"] [class*="header"] div[class*="icon"] {
+    filter: hue-rotate(85deg) contrast(1.1);
+}
+
+#app-mount div[role="dialog"][class*="root"] [class*="header"] div[class*="channel"] {
+    background: rgba(56, 8, 49, .95);
 }
 
 /*** Footer, the description doesn't have it but other modals do, like the changelog ***/

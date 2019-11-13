@@ -616,15 +616,18 @@
 }
 
 /** Embeds **/
-#app-mount div[class*="embedInner"] {
+#app-mount div[class*="embedWrapper"] {
     background-color: rgba(4, 44, 66, 0.6);
     border-color: transparent;
 }
 
 /*** Embed default pill + quote color ***/
-#app-mount div[class*="embedPill"],
 #app-mount div[class*="blockquoteDivider"] {
     background-color: #010b3d !important;
+}
+
+#app-mount div[class*="embedWrapper"] {
+    border-color: #010b3d !important
 }
 
 #app-mount div[class*="isMentioned"]:after {
@@ -675,6 +678,7 @@
 /*** Background ***/
 #app-mount div[class*="message"] div[class*="markup"] code {
     background-color: transparent;
+    border-color: rgba(4, 44, 66, 0.8);
 }
 
 /* Activity feed */
@@ -765,7 +769,8 @@
     background-color: rgba(53, 10, 39, .9);
 }
 
-#app-mount div[class*="activityFeed"] div[class*="popoutContainer"] div[class*="popout"] div[class*="memberListItem"]:hover {
+#app-mount div[class*="activityFeed"] div[class*="popoutContainer"] div[class*="popout"] div[class*="memberListItem"]:hover,
+#app-mount div[class*="guildPopout"] {
     background-color: transparent;
 }
 

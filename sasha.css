@@ -327,7 +327,7 @@ div[class*="chat-"] div[class*="spacer-"] div[class*="typing-"] {
 }
 
 /** Embeds **/
-div[class*="chat-"] > div[class*="content-"] div[class*="embedInner-"] {
+div[class*="chat-"] > div[class*="content-"] div[class*="embedWrapper-"] {
     background-color: rgba(0, 0, 0, .2);
     border-color: transparent;
 }
