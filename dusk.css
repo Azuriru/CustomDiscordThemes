@@ -1235,45 +1235,45 @@
 }
 
 /** Pinned messages and recent mentions popout, arguably second the most important one to get right **/
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] {
-    background-color: rgba(50, 0, 0, 0.85);
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] {
+    background-color: rgba(50, 0, 0, 0.95);
     border-color: transparent;
     box-shadow: none;
 }
 
 /*** Pinned popout header and footer ***/
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] > div[class*="header"] {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] > div[class*="header"] {
     background-color: transparent;
     box-shadow: none;
 }
 
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] > div[class*="footer"] {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] > div[class*="footer"] {
     background-color: rgba(0, 0, 0, .1);
 }
 
 /*** Pinned popout messages ***/
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] {
     background-color: transparent;
     border-color: transparent;
 }
 
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"]:hover {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"]:hover {
     border-color: transparent;
 }
 
 /**** Action buttons, jump and remove ****/
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] div[class*="actionButtons"] {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] div[class*="actionButtons"] {
     background-color: transparent;
     box-shadow: none;
 }
 
 /*** Change color of the no pin message icon ***/
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="emptyPlaceholder"] div[class*="image"] {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="emptyPlaceholder"] div[class*="image"] {
     filter: hue-rotate(140deg) saturate(1200%) brightness(0.7);
 }
 
 /*** Load more messages background ***/
-#app-mount.day div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="hasMore"] button[class*="hasMoreButton"] {
+#app-mount.day div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="hasMore"] button[class*="hasMoreButton"] {
     background-color: rgba(0, 0, 0, .3);
     border-color: transparent;
 }
@@ -1428,32 +1428,32 @@
 }
 
 /* Context menu */
-#app-mount.day div[class*="contextMenu"] {
+#app-mount.day div[class*="container"][role="menu"] {
     background-color: rgba(50, 0, 0, 0.85);
     box-shadow: none;
     padding: 0;
 }
 
-#app-mount.day div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"]:hover {
+#app-mount.day div[class*="container"][role="menu"] div[class*="itemGroup"] div[class*="item"]:hover {
     background-color: rgba(38, 0, 0, 0.2);
     box-shadow: none;
 }
 
 /* FLUFF. */
-#app-mount.day div[class*="contextMenu"] div[class*="itemGroup"]:first-of-type div[class*="item"]:first-of-type {
+#app-mount.day div[class*="container"][role="menu"] div[class*="itemGroup"]:first-of-type div[class*="item"]:first-of-type {
     border-radius: 5px 5px 0 0;
 }
 
-#app-mount.day div[class*="contextMenu"] div[class*="itemGroup"]:last-of-type div[class*="item"]:last-of-type {
+#app-mount.day div[class*="container"][role="menu"] div[class*="itemGroup"]:last-of-type div[class*="item"]:last-of-type {
     border-radius: 0 0 5px 5px;
 }
 
-#app-mount.day div[class*="contextMenu"] div[class*="item"] {
+#app-mount.day div[class*="container"][role="menu"] div[class*="item"] {
     border-radius: 0;
 }
 
 /** Checkboxes **/
-#app-mount.day div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span {
+#app-mount.day div[class*="container"][role="menu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span {
     background-color: #ff916b;
     border-color: #ff916b;
 }
@@ -3571,45 +3571,45 @@
 }
 
 /** Pinned messages and recent mentions popout, arguably second the most important one to get right **/
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] {
-    background-color: rgba(39, 3, 26, 0.85);
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] {
+    background-color: rgba(39, 3, 26, 0.95);
     border-color: transparent;
     box-shadow: none;
 }
 
 /*** Pinned popout header and footer ***/
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] > div[class*="header"] {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] > div[class*="header"] {
     background-color: transparent;
     box-shadow: none;
 }
 
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] > div[class*="footer"] {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] > div[class*="footer"] {
     background-color: rgba(0, 0, 0, .1);
 }
 
 /*** Pinned popout messages ***/
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] {
     background-color: transparent;
     border-color: transparent;
 }
 
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"]:hover {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"]:hover {
     border-color: transparent;
 }
 
 /**** Action buttons, jump and remove ****/
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] div[class*="actionButtons"] {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="messageGroupWrapper"] div[class*="actionButtons"] {
     background-color: transparent;
     box-shadow: none;
 }
 
 /*** Change color of the no pin message icon ***/
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="emptyPlaceholder"] div[class*="image"] {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="emptyPlaceholder"] div[class*="image"] {
     filter: hue-rotate(95deg) saturate(800%) brightness(0.65);
 }
 
 /*** Load more messages background ***/
-#app-mount div[class*="popouts"] div[class*="messagesPopoutWrap"] div[class*="hasMore"] button[class*="hasMoreButton"] {
+#app-mount div[class*="layerContainer"] div[class*="messagesPopoutWrap"] div[class*="hasMore"] button[class*="hasMoreButton"] {
     background-color: rgba(0, 0, 0, .3);
     border-color: transparent;
 }
@@ -3764,32 +3764,32 @@
 }
 
 /* Context menu */
-#app-mount div[class*="contextMenu"] {
+#app-mount div[class*="container"][role="menu"] {
     background-color: rgba(39, 3, 26, 0.85);
     box-shadow: none;
     padding: 0;
 }
 
-#app-mount div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"]:hover {
+#app-mount div[class*="container"][role="menu"] div[class*="itemGroup"] div[class*="item"]:hover {
     background-color: rgba(90, 23, 65, 0.2);
     box-shadow: none;
 }
 
 /* FLUFF. */
-#app-mount div[class*="contextMenu"] div[class*="itemGroup"]:first-of-type div[class*="item"]:first-of-type {
+#app-mount div[class*="container"][role="menu"] div[class*="itemGroup"]:first-of-type div[class*="item"]:first-of-type {
     border-radius: 5px 5px 0 0;
 }
 
-#app-mount div[class*="contextMenu"] div[class*="itemGroup"]:last-of-type div[class*="item"]:last-of-type {
+#app-mount div[class*="container"][role="menu"] div[class*="itemGroup"]:last-of-type div[class*="item"]:last-of-type {
     border-radius: 0 0 5px 5px;
 }
 
-#app-mount div[class*="contextMenu"] div[class*="item"] {
+#app-mount div[class*="container"][role="menu"] div[class*="item"] {
     border-radius: 0;
 }
 
 /** Checkboxes **/
-#app-mount div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span {
+#app-mount div[class*="container"][role="menu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span {
     background-color: #560b71;
     border-color: #560b71;
 }
