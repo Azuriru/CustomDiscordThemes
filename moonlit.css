@@ -1403,31 +1403,37 @@
 }
 
 /* Context menu */
+#app-mount div[class*="contextMenu"],
 #app-mount div[class*="container"][role="menu"] {
     background-color: rgba(46, 5, 59, 0.85);
     box-shadow: none;
     padding: 0;
 }
 
+#app-mount div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"]:hover,
 #app-mount div[class*="container"][role="menu"] div[class*="itemGroup"] div[class*="item"]:hover {
     background-color: rgba(30, 0, 41, 0.2);
     box-shadow: none;
 }
 
 /* FLUFF. */
+#app-mount div[class*="contextMenu"] div[class*="itemGroup"]:first-of-type div[class*="item"]:first-of-type,
 #app-mount div[class*="container"][role="menu"] div[class*="itemGroup"]:first-of-type div[class*="item"]:first-of-type {
     border-radius: 5px 5px 0 0;
 }
 
+#app-mount div[class*="contextMenu"] div[class*="itemGroup"]:last-of-type div[class*="item"]:last-of-type,
 #app-mount div[class*="container"][role="menu"] div[class*="itemGroup"]:last-of-type div[class*="item"]:last-of-type {
     border-radius: 0 0 5px 5px;
 }
 
+#app-mount div[class*="contextMenu"] div[class*="item"],
 #app-mount div[class*="container"][role="menu"] div[class*="item"] {
     border-radius: 0;
 }
 
 /** Checkboxes **/
+#app-mount div[class*="contextMenu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span,
 #app-mount div[class*="container"][role="menu"] div[class*="itemGroup"] div[class*="item"][class*="itemToggle"] div[class*="checkbox"] div[class*="checkboxInner"] input[class*="checkboxElement"]:checked + span {
     background-color: #560b71;
     border-color: #560b71;
