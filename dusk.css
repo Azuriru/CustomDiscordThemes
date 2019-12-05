@@ -55,7 +55,7 @@
 
 /* Whole app minus the top bar background */
 /* Pseudo-element to allow for custom filters and stuff, also nicer positioning than background-size: cover */
-#app-mount.day div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[role="dialog"][class*="layer"]::before {
+#app-mount.day div[class*="app"] > div[class*="app"] > div[class*="bg"]::before {
     content: '';
     background-image: url(https://cdn.discordapp.com/attachments/595506142126538753/602478617553010704/Opalset.png);
     background-color: #4d0009;
@@ -2401,7 +2401,7 @@
 
 /* Whole app minus the top bar background */
 /* Pseudo-element to allow for custom filters and stuff, also nicer positioning than background-size: cover */
-#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[role="dialog"][class*="layer"]::before {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="bg"]::before {
     content: '';
     background: linear-gradient(to right, rgba(45, 7, 40, .65), rgba(41, 7, 40, .65)), url(https://media.discordapp.net/attachments/595506142126538753/602478618001801216/Hopal.png) center top / cover no-repeat fixed;
     position: absolute;

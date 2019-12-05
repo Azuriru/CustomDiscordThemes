@@ -54,7 +54,7 @@
 
 /* Whole app minus the top bar background */
 /* Pseudo-element to allow for custom filters and stuff, also nicer positioning than background-size: cover */
-#app-mount div[class*="app"] > div[class*="app"] > div[class*="layers"] > div[role="dialog"][class*="layer"]::before {
+#app-mount div[class*="app"] > div[class*="app"] > div[class*="bg"]::before {
     content: '';
     background: url(https://cdn.discordapp.com/attachments/238354899291734017/580301729795538954/Moonlight.png) center / cover no-repeat fixed;
     position: absolute;
