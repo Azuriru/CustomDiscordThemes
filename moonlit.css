@@ -1366,10 +1366,28 @@
 }
 
 /** Emoticon picker popout**/
-#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] {
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"],
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="categories"], 
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="infoBar-"] {
     background-color: rgba(46, 5, 59, 0.85);
     border-color: transparent;
     box-shadow: none;
+}
+
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="infoBar-"] {
+    filter: brightness(1.2) !important;
+}
+
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="infoBar"] {
+    filter: brightness(.8);
+}
+
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="infoBar-"] {
+    filter: brightness(1.2) !important;
+}
+
+#app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="infoBar"] {
+    filter: brightness(.8);
 }
 
 #app-mount div[class*="layerContainer"] div[class*="emojiPicker"] [class*="sadImage"] {
@@ -1807,7 +1825,8 @@
     border-color: rgba(46, 5, 59, 0.85);
 }
 
-#app-mount div[class*="select"] div[class*="menu"] {
+#app-mount div[class*="select"] div[class*="menu"],
+#app-mount [role*="dialog"] div[class*="popout"] {
     background-color: rgba(46, 5, 59, 0.8);
     border-color: rgba(46, 5, 59, 0.9);
 }
