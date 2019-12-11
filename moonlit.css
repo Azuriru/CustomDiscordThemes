@@ -727,6 +727,10 @@
     background-color: rgba(255, 255, 255, 0.1);
 }
 
+#app-mount div[class*="channelTextArea"] [class*="scrollableContainer"] {
+    background: transparent;
+}
+
 #app-mount div[class*="channelTextArea"] [class*="inner"] [class*="button-"] svg path:not([class*="attachButtonPlay"]) {
     fill: rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 0.3);
