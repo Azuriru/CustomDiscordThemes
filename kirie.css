@@ -1,3 +1,5 @@
+@import url('https://raw.githack.com/GameModerator/CustomDiscordThemes/master/nitpick.css');
+
 /* Entire app, but only affects the top bar */
 #app-mount {
     background-color: rgba(41, 0, 56, .95);
