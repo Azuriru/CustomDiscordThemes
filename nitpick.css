@@ -1,0 +1,3 @@
+#app-mount div[class*="message"] div[class*="markup"] > pre {
+    margin-bottom: 6px;
+}

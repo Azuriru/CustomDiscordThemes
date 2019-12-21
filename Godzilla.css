@@ -90,7 +90,8 @@
 }
 
 /* Guild list background */
-#app-mount div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"] {
+#app-mount div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"],
+#app-mount [class*="container"] > [class*="wrapper"] {
     background-color: transparent;
 }
 
@@ -680,7 +681,8 @@
 }
 
 /*** Background ***/
-#app-mount div[class*="message"] div[class*="markup"] code {
+#app-mount div[class*="message"] div[class*="markup"] code,
+#app-mount span[class*="inlineCode"] {
     background-color: rgba(4, 44, 66, 0.6);
     border-color: rgba(4, 44, 66, 0.8);
 }

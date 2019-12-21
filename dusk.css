@@ -198,12 +198,13 @@
 */
 
 /* Guild list background */
-#app-mount.day div[class*="container"] div[class*="wrapper"][class*="guilds"],
+#app-mount.day div[class*="container"] [class*="wrapper"][class*="guilds"],
 #app-mount.day div[class*="titleBar"][class*="typeMacOS"] {
     background-color: rgba(38, 0, 0, .4);
 }
 
-#app-mount.day div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"] {
+#app-mount.day div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"],
+#app-mount.day [class*="container"] > [class*="wrapper"] {
     background-color: transparent;
 }
 
@@ -888,7 +889,8 @@
 }
 
 /*** Background ***/
-#app-mount.day div[class*="message"] div[class*="markup"] code {
+#app-mount.day div[class*="message"] div[class*="markup"] code,
+#app-mount.day span[class*="inlineCode"] {
     background-color: rgba(50, 0, 0, 0.6);
     border-color: rgba(50, 0, 0, 0.8);
 }
@@ -2555,12 +2557,13 @@
 */
 
 /* Guild list background */
-#app-mount div[class*="container"] div[class*="wrapper"][class*="guilds"],
+#app-mount div[class*="container"] [class*="wrapper"][class*="guilds"],
 #app-mount div[class*="titleBar"][class*="typeMacOS"] {
     background-color: rgba(78, 16, 55, .3);
 }
 
-#app-mount div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"] {
+#app-mount div[role="dialog"] > [class*="container"] > [class*="wrapper"] [class*="scroller"],
+#app-mount [class*="container"] > [class*="wrapper"] {
     background-color: transparent;
 }
 
@@ -3245,7 +3248,8 @@
 }
 
 /*** Background ***/
-#app-mount div[class*="message"] div[class*="markup"] code {
+#app-mount div[class*="message"] div[class*="markup"] code,
+#app-mount span[class*="inlineCode"] {
     background-color: rgba(39, 3, 26, 0.6);
     border-color: rgba(39, 3, 26, 0.8);
 }
