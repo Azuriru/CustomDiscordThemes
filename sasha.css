@@ -662,7 +662,7 @@ div[class*="userPopout-"] > div[class*="footer-"] > input[class*="quickMessage-"
 
 /** TODO: Add role + button **/
 div[class*="popouts-"] > div[class*="popout-"] + div[class*="popout-"][role="dialog"] > div[class*="header-"] + div[class*="sectionTag-"] {
-    background-color: transparent;;
+    background-color: transparent;
 }
 
 div[class*="popouts-"] > div[class*="popout-"] + div[class*="popout-"][role="dialog"] > div[class*="header-"] + div[class*="sectionTag-"] div[class*="row-"] {

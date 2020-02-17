@@ -1,3 +1,7 @@
 #app-mount div[class*="message"] div[class*="markup"] > pre {
     margin-bottom: 6px;
 }
+
+#app-mount [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"] [class*="button"][class*="selected"] {
+    border-radius: 4px
+}
