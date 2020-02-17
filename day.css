@@ -2317,7 +2317,9 @@
 }
 
 /* Byn got fed up */
-#app-mount.day [class*="scroller-"] {
+#app-mount.day [class*="scroller-"], 
+#app-mount.day [class*="nowPlayingColumn"],
+#app-mount.day [class*="actionButton"] {
     background: transparent;
 }
 
@@ -2347,24 +2349,29 @@
     height: 26px;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"]:hover,
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"]:hover,
 [class*="message"][class*="cozyMessage"][class*="cozy"][class*="selected"] {
     background: transparent;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiButton"],
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiSeparator"]  {
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiButton"],
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiSeparator"]  {
     display: none;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"],
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"],
 .day [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"] {
     top: 80%;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"],
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"],
 .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"] {
     top: calc(100% - 2px);
+}
+
+/* Remove emoji reactions cause byn doesn't like that either */
+#app-mount .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"] [class*="emoji"] {
+    display: none;
 }
 
 /* Dates, dividers */
@@ -2438,7 +2445,12 @@
     width: 50%;
 }
 
-.theme-dark .day {
+/* Now Playing */
+#app-mount.day [class*="nowPlayingColumn"] [class*="itemCard"] [class*="inset"] {
+    background: var(--background-primary);
+}
+
+.theme-dark #app-mount.day {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;

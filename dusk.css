@@ -2335,7 +2335,9 @@
 }
 
 /* Byn got fed up */
-#app-mount.day [class*="scroller-"] {
+#app-mount.day [class*="scroller-"], 
+#app-mount.day [class*="nowPlayingColumn"],
+#app-mount.day [class*="actionButton"] {
     background: transparent;
 }
 
@@ -2365,22 +2367,22 @@
     height: 26px;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"]:hover,
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"]:hover,
 [class*="message"][class*="cozyMessage"][class*="cozy"][class*="selected"] {
     background: transparent;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiButton"],
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiSeparator"]  {
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiButton"],
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiSeparator"]  {
     display: none;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"],
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"],
 .day [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"] {
     top: 80%;
 }
 
-.mouse-mode .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"],
+#app-mount.day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"],
 .day [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"] {
     top: calc(100% - 2px);
 }
@@ -2456,7 +2458,12 @@
     width: 50%;
 }
 
-.theme-dark .day {
+/* Now Playing */
+#app-mount.day [class*="nowPlayingColumn"] [class*="itemCard"] [class*="inset"] {
+    background: var(--background-primary);
+}
+
+.theme-dark #app-mount.day {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;
@@ -4821,7 +4828,9 @@
 }
 
 /* Byn got fed up */
-#app-mount [class*="scroller-"] {
+#app-mount [class*="scroller-"], 
+#app-mount [class*="nowPlayingColumn"],
+#app-mount [class*="actionButton"] {
     background-color: transparent;
 }
 
@@ -4851,28 +4860,28 @@
     height: 26px;
 }
 
-.mouse-mode [class*="message"][class*="cozyMessage"][class*="cozy"]:hover,
+#app-mount[class*="message"][class*="cozyMessage"][class*="cozy"]:hover,
 [class*="message"][class*="cozyMessage"][class*="cozy"][class*="selected"] {
     background: transparent;
 }
 
-.mouse-mode [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiButton"],
-.mouse-mode [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiSeparator"]  {
+#app-mount[class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiButton"],
+#app-mount[class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emojiSeparator"]  {
     display: none;
 }
 
-.mouse-mode [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"],
+#app-mount[class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"],
 [class*="message"][class*="cozyMessage"][class*="cozy"][class*="groupStart"] [class*="buttonContainer"] {
     top: 80%;
 }
 
-.mouse-mode [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"],
+#app-mount[class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"],
 [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"] {
     top: calc(100% - 2px);
 }
 
 /* Remove emoji reactions cause bae doesn't like that */
-[class*="message"][class*="cozyMessage"][class*="cozy"] [class*="emoji"] {
+#app-mount [class*="message"][class*="cozyMessage"][class*="cozy"] [class*="buttonContainer"] [class*="emoji"] {
     display: none;
 }
 
@@ -4947,7 +4956,12 @@
     width: 50%;
 }
 
-.theme-dark {
+/* Now Playing */
+#app-mount [class*="nowPlayingColumn"] [class*="itemCard"] [class*="inset"] {
+    background: var(--background-primary);
+}
+
+.theme-dark #app-mount {
     --header-primary: #fff;
     --header-secondary: #b9bbbe;
     --text-normal: #dcddde;
