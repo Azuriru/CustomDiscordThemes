@@ -8,11 +8,6 @@
     border-radius: 4px;
 }
 
-/* Stops the makeGroupchat from flying away */
-#app-mount div[class*="toolbar"] [class*="inviteToolbar"] [class*="iconWrapper"] {
-    top: 16px;
-}
-
 /* Better border for text area */ 
 #app-mount div[class*="channelTextArea"] [class*="scrollableContainer"] [class*="attachWrapper"] {
     border-right: none;

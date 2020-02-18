@@ -2304,7 +2304,7 @@
 /* Byn got fed up */
 #app-mount [class*="scroller-"], 
 #app-mount [class*="nowPlayingColumn"],
-#app-mount [class*="actionButton"] {
+#app-mount [class*="peopleColumn"] [class*="actionButton"] {
     background: transparent;
 }
 
@@ -2364,7 +2364,7 @@
     display: none;
 }
 
-#app-mount [class*="divider"] {
+#app-mount [class*="scrollerWrap"] [class*="scroller"] [class*="divider"] {
     border-color: transparent;
     margin: 16px 0;
 }

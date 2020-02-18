@@ -2337,7 +2337,7 @@
 /* Byn got fed up */
 #app-mount.day [class*="scroller-"], 
 #app-mount.day [class*="nowPlayingColumn"],
-#app-mount.day [class*="actionButton"] {
+#app-mount.day [class*="peopleColumn"] [class*="actionButton"] {
     background: transparent;
 }
 
@@ -2392,7 +2392,7 @@
     display: none;
 }
 
-#app-mount.day [class*="divider"] {
+#app-mount.day [class*="scrollerWrap"] [class*="scroller"] [class*="divider"] {
     border-color: transparent;
     margin: 16px 0;
 }
@@ -4830,7 +4830,7 @@
 /* Byn got fed up */
 #app-mount [class*="scroller-"], 
 #app-mount [class*="nowPlayingColumn"],
-#app-mount [class*="actionButton"] {
+#app-mount [class*="peopleColumn"] [class*="actionButton"] {
     background-color: transparent;
 }
 
@@ -4890,7 +4890,7 @@
     display: none;
 }
 
-#app-mount [class*="divider"] {
+#app-mount [class*="scrollerWrap"] [class*="scroller"] [class*="divider"] {
     border-color: transparent;
     margin: 16px 0;
 }
