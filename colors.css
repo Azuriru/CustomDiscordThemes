@@ -1,6 +1,6 @@
-.darkest-times { 
+.darkest-times {
     /* Default */
-    color: #5a1741;
+    color: rgb(90, 23, 65);
     /* Hover */
     color: rgba(90, 23, 65, 0.4);
     /* Selected */
@@ -40,7 +40,7 @@
 
 .brightest-place { 
     /* Default */
-    color: #260000;
+    color: rgb(38, 0, 0);
     /* Hover */
     color: rgba(38, 0, 0, 0.4);
     /* Selected */
